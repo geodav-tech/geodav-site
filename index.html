@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css" type="text/css">
+	<![endif]-->
+
+	<title>geodav.tech--Geospatial development done right the first time</title>
+
+	<link rel='stylesheet' id='formidable-css'  href='css/formidablepro.css?ver=32029' type='text/css' media='all' />
+	<link rel='stylesheet' id='pirate_forms_front_styles-css'  href='css/front.css?ver=4.4.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_font-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C400italic%7CMontserrat%3A700%7CHomemade+Apple&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_font_all-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600italic%2C600%2C700%2C700italic%2C800%2C800italic&#038;ver=4.4.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_bootstrap_style-css'  href='css/bootstrap.css?ver=4.4.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_fontawesome-css'  href='css/font-awesome.min.css?ver=v1' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_pixeden_style-css'  href='css/pixeden-icons.css?ver=v1' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_style-css'  href='css/style.css?ver=v1' type='text/css' media='all' />
+	<link rel='stylesheet' id='zerif_responsive_style-css'  href='css/responsive.css?ver=v1' type='text/css' media='all' />
+	<link rel='stylesheet' id='jetpack_css-css'  href='css/jetpack.css?ver=3.9.2' type='text/css' media='all' />
+	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+	<script type='text/javascript' src='js/jquery/jquery.js?ver=1.11.3'></script>
+	<script type='text/javascript' src='js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+	<script type='text/javascript'>
+	/* <![CDATA[ */
+	var pirateFormsObject = {"errors":""};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src='js/pirate-forms/scripts-general.js?ver=4.4.2'></script>
+	<!-- <link rel='https://api.w.org/' href='http://www.geodav.tech/?rest_route=/' /> -->
+	<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.geodav.tech/xmlrpc.php?rsd" /> -->
+	<!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.geodav.tech/wp-includes/wlwmanifest.xml" />  -->
+	<!-- <meta name="generator" content="WordPress 4.4.2" /> -->
+	<link rel='shortlink' href='http://wp.me/7ihek' />
+
+	<!-- <link rel='dns-prefetch' href='//i0.wp.com'>
+	<link rel='dns-prefetch' href='//i1.wp.com'>
+	<link rel='dns-prefetch' href='//i2.wp.com'>
+	<style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	-->
+
+	<style type="text/css" id="custom-background-css">
+		body.custom-background { background-image: url('images/bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+	</style> 
+
+	<!-- Jetpack Open Graph Tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="geodav.tech" />
+	<meta property="og:description" content="Geospatial development done right the first time" />
+	<meta property="og:url" content="http://www.geodav.tech/" />
+	<meta property="og:site_name" content="geodav.tech" />
+	<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+	<meta property="og:locale" content="en_US" />
+</head>
+
+<body class="home blog custom-background" >
+<div class="preloader"><div class="status">&nbsp;</div></div>
+
+<div id="mobilebgfix">
+	<div class="mobile-bg-fix-img-wrap">
+		<div class="mobile-bg-fix-img"></div>
+	</div>
+	<div class="mobile-bg-fix-whole-site">
+
+
+<header id="home" class="header">
+
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+
+		<div class="container">
+
+			<div class="navbar-header responsive-logo">
+
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+
+				<span class="sr-only">Toggle navigation</span>
+
+				<span class="icon-bar"></span>
+
+				<span class="icon-bar"></span>
+
+				<span class="icon-bar"></span>
+
+				</button>
+
+				<a href="/" class="navbar-brand">geodav.tech</a>
+			</div>
+
+			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list"><li class="page_item page-item-2"><a href="http://www.geodav.tech/?page_id=2">Sample Page</a></li>
+				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list"><li class="page_item page-item-3"><a href="http://www.geodav.tech/?page_id=2">Blog</a></li>
+				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list"><li class="page_item page-item-3"><a href="http://www.geodav.tech/?page_id=2">About</a></li>
+</ul>			</nav>
+
+		</div>
+
+	</div>
+	<!-- / END TOP BAR --><div class="home-header-wrap">
+
+<div class="header-content-wrap"><div class="container"><h1 class="intro-text">Geospatial development done right the first time</h1><div class="buttons"><a href="#focus" class="btn btn-primary custom-button red-btn">More</a></div></div></div><!-- .header-content-wrap --><div class="clear"></div>
+</div>
+</header> <!-- / END HOME SECTION  -->
+
+<div id="content" class="site-content">
+
+<section class="focus" id="focus">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+
+	<div class="section-header">
+
+		<!-- SECTION TITLE -->
+
+		<h2 class="dark-text">Tech stack</h2><div class="section-legend">geodav.tech specializes in well-designed, detail-oriented GIS applications using the best tools available</div>
+	</div>
+
+	<div class="row">
+
+			
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="#"><i class="pixeden" style="background:url(images/parallax.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">Web technologies</h3>
+            <!-- FOCUS HEADING -->
+
+			<p>Create memorable pages with smooth parallax effects that everyone loves. Also, use our lightweight content slider offering you smooth and great-looking animations.</p>	
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="#"><i class="pixeden" style="background:url(images/woo.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">Esri software and APIs</h3>
+            <!-- FOCUS HEADING -->
+
+			<p>Build a front page for your WooCommerce store in a matter of minutes. The neat and clean presentation will help your sales and make your store accessible to everyone.</p>	
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="#"><i class="pixeden" style="background:url(images/ccc.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">Mapbox and leaflet</h3>
+            <!-- FOCUS HEADING -->
+
+			<p>Showcase your team, products, clients, about info, testimonials, latest posts from the blog, contact form, additional calls to action. Everything translation ready.</p>	
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+
+			            <div class="service-icon">
+				
+								
+					<a href="#"><i class="pixeden" style="background:url(images/ti-logo.png) no-repeat center;width:100%; height:100%;"></i> <!-- FOCUS ICON--></a>
+				
+				
+            </div>
+			
+            <h3 class="red-border-bottom">PostGIS and QGIS</h3>
+            <!-- FOCUS HEADING -->
+
+			<p>Get new content blocks: pricing table, Google Maps, and more. Change the sections order, display each block exactly where you need it, customize the blocks with whatever colors you wish.</p>	
+
+        </div>
+
+        
+	</div>
+
+</div> <!-- / END CONTAINER -->
+
+</section>  <!-- / END FOCUS SECTION --><section class="about-us" id="aboutus">
+	<div class="container">
+
+		<!-- SECTION HEADER -->
+
+		<div class="section-header">
+
+			<!-- SECTION TITLE -->
+
+			<h2 class="white-text">Focus</h2>
+			<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+
+					</div><!-- / END SECTION HEADER -->
+
+		<!-- 3 COLUMNS OF ABOUT US-->
+
+		<div class="row">
+
+			<!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
+
+		<div class="col-lg-6 col-md-6 column zerif-rtl-big-title"><div class="big-intro" data-scrollreveal="enter left after 0s over 1s">We love anything and everything geospatial.</div></div><div class="col-lg-6 col-md-6 column zerif_about_us_center " data-scrollreveal="enter bottom after 0s over 1s"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est.</p></div>
+	</div> <!-- / END 3 COLUMNS OF ABOUT US-->
+
+	<!-- CLIENTS -->
+	
+</div> <!-- / END CONTAINER -->
+
+</section> <!-- END ABOUT US SECTION --><section class="our-team" id="team"><div class="container"><div class="section-header"><h2 class="dark-text">Recent Projects</h2><div class="section-legend">Hover over the project image to see a brief description; click the project name to see it in action</div></div><div class="row" data-scrollreveal="enter left after 0s over 0.1s">
+        <div class="col-lg-3 col-sm-3 team-box">
+
+            <div class="team-member">
+
+								
+					<figure class="profile-pic">
+
+						<img src="images/team1.png" alt="Uploaded image" />
+
+					</figure>
+				
+				
+                <div class="member-details">
+
+										
+						<h3 class="dark-text red-border-bottom">Iowa Expenditures</h3>
+						
+						
+
+										
+						<div class="position">Mapbox, Google Charts API</div>
+				
+					
+                </div>
+
+                <div class="social-icons">
+
+                    <ul>
+                        
+                        
+                        
+                        
+                        						
+						
+                    </ul>
+
+                </div>
+
+				                <div class="details">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+                </div>
+				
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 team-box">
+
+            <div class="team-member">
+
+								
+					<figure class="profile-pic">
+
+						<img src="images/team2.png" alt="Uploaded image" />
+
+					</figure>
+				
+				
+                <div class="member-details">
+
+										
+						<h3 class="dark-text red-border-bottom">Colorado Weather</h3>
+						
+						
+
+										
+						<div class="position">Esri JavaScript API</div>
+				
+					
+                </div>
+
+                <div class="social-icons">
+
+                    <ul>
+                        
+                        
+                        
+                        
+                        						
+						
+                    </ul>
+
+                </div>
+
+				                <div class="details">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+                </div>
+				
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 team-box">
+
+            <div class="team-member">
+
+								
+					<figure class="profile-pic">
+
+						<img src="images/team3.png" alt="Uploaded image" />
+
+					</figure>
+				
+				
+                <div class="member-details">
+
+										
+						<h3 class="dark-text red-border-bottom">Greenland Hydrology</h3>
+						
+						
+
+										
+						<div class="position">ArcMap, Landsat 7 imagery</div>
+				
+					
+                </div>
+
+                <div class="social-icons">
+
+                    <ul>
+                        
+                        
+                        
+                        
+                        						
+						
+                    </ul>
+
+                </div>
+
+				                <div class="details">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+                </div>
+				
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-3 col-sm-3 team-box">
+
+            <div class="team-member">
+
+								
+					<figure class="profile-pic">
+
+						<img src="images/team4.png" alt="Uploaded image" />
+
+					</figure>
+				
+				
+                <div class="member-details">
+
+										
+						<h3 class="dark-text red-border-bottom">Enterprise Geo-analytics</h3>
+						
+						
+
+										
+						<div class="position">SpotFire Javascript API, Esri JavaScript API</div>
+				
+					
+                </div>
+
+                <div class="social-icons">
+
+                    <ul>
+                        
+                        
+                        
+                        
+                        						
+						
+                    </ul>
+
+                </div>
+
+				                <div class="details">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+                </div>
+				
+            </div>
+
+        </div>
+
+        </div> </div></section>
+
+		<section class="testimonial" id="testimonials"><div class="container"><div class="section-header"><h2 class="white-text">Testimonials</h2></div><div class="row" data-scrollreveal="enter right after 0s over 1s"><div class="col-md-12"><div id="client-feedbacks" class="owl-carousel owl-theme  ">
+        <div class="feedback-box">
+
+            <!-- MESSAGE OF THE CLIENT -->
+
+							<div class="message">
+					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.				</div>
+			
+            <!-- CLIENT INFORMATION -->
+
+            <div class="client">
+
+                <div class="quote red-text">
+
+                    <i class="icon-fontawesome-webfont-294"></i>
+
+                </div>
+
+                <div class="client-info">
+
+					<a  target="_blank" class="client-name" >Dana Lorem</a>
+					
+
+					
+                </div>
+
+                <div class="client-image hidden-xs"><img src="images/testimonial1.jpg" alt="Uploaded image" /></div>
+            </div>
+            <!-- / END CLIENT INFORMATION-->
+
+        </div> <!-- / END SINGLE FEEDBACK BOX-->
+
+        
+        <div class="feedback-box">
+
+            <!-- MESSAGE OF THE CLIENT -->
+
+							<div class="message">
+					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.				</div>
+			
+            <!-- CLIENT INFORMATION -->
+
+            <div class="client">
+
+                <div class="quote red-text">
+
+                    <i class="icon-fontawesome-webfont-294"></i>
+
+                </div>
+
+                <div class="client-info">
+
+					<a  target="_blank" class="client-name" >Linda Guthrie</a>
+					
+
+					
+                </div>
+
+                <div class="client-image hidden-xs"><img src="images/testimonial2.jpg" alt="Uploaded image" /></div>
+            </div>
+            <!-- / END CLIENT INFORMATION-->
+
+        </div> <!-- / END SINGLE FEEDBACK BOX-->
+
+        
+        <div class="feedback-box">
+
+            <!-- MESSAGE OF THE CLIENT -->
+
+							<div class="message">
+					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec sem vel sapien venenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.				</div>
+			
+            <!-- CLIENT INFORMATION -->
+
+            <div class="client">
+
+                <div class="quote red-text">
+
+                    <i class="icon-fontawesome-webfont-294"></i>
+
+                </div>
+
+                <div class="client-info">
+
+					<a  target="_blank" class="client-name" >Cynthia Henry</a>
+					
+
+					
+                </div>
+
+                <div class="client-image hidden-xs"><img src="images/testimonial3.jpg" alt="Uploaded image" /></div>
+            </div>
+            <!-- / END CLIENT INFORMATION-->
+
+        </div> <!-- / END SINGLE FEEDBACK BOX-->
+
+        </div></div></div></div></section>
+
+        <section class="latest-news" id="latestnews"><div class="container"><div class="section-header"><h2 class="dark-text">Latest Blog Posts</h2><div class="dark-text section-legend">Just a sample of some of the really cool things we've been working on lately!</div></div><!-- END .section-header --><div class="clear"></div><div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox"><div class="item active"><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.geodav.tech/?p=1" title="Hello world!"><img src="images/blank-latestposts.png" alt="Hello world!" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.geodav.tech/?p=1" title="Hello world!">Hello world!</a></h3><p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+</div></div><!-- .latestnews-box"> --><div class="clear"></div></div></div><!-- .carousel-inner --><a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div><!-- #carousel-homepage-latestnews --></div><!-- .container --></section>			<section class="contact-us" id="contact">
+				<div class="container">
+					<!-- SECTION HEADER -->
+					<div class="section-header">
+
+						<h2 class="white-text">Get in touch</h2>					</div>
+					<!-- / END SECTION HEADER -->
+
+					<div class="row">
+	<div class="pirate_forms_wrap">
+	
+	<form method="post"  enctype="application/x-www-form-urlencoded" id="pirate_forms_1" class="pirate_forms "><div class="form_field_wrap contact_name_wrap col-lg-4 col-sm-4 "><label for="pirate-forms-contact-name"></label>
+					<input id="pirate-forms-contact-name" name="pirate-forms-contact-name" required class="form-control" type="text" value="" placeholder="Your Name"></div><div class="form_field_wrap contact_email_wrap col-lg-4 col-sm-4 "><label for="pirate-forms-contact-email"></label>
+					<input id="pirate-forms-contact-email" name="pirate-forms-contact-email" required class="form-control" type="email" value="" placeholder="Your Email"></div><div class="form_field_wrap contact_subject_wrapcol-lg-4 col-sm-4 "><label for="pirate-forms-contact-subject"></label>
+					<input id="pirate-forms-contact-subject" name="pirate-forms-contact-subject" required class="form-control" type="text" value="" placeholder="Subject"></div><div class="form_field_wrap contact_message_wrap col-lg-12 col-sm-12 ">
+					<textarea id="pirate-forms-contact-message" name="pirate-forms-contact-message" required class="form-control" placeholder="Your message"></textarea></div>
+					<button id="pirate-forms-contact-submit" name="pirate-forms-contact-submit" class="pirate-forms-submit-button" class="" type="submit">Send Message</button><div class="form_field_wrap hidden " style="display: none"><label for="form_honeypot">Leave blank to submit</label>
+					<input id="form_honeypot" name="honeypot" class="form-control" type="text" value="" placeholder=""></div>
+					<input id="wordpress-nonce" name="wordpress-nonce" class="form-control" type="hidden" value="0897aee356" placeholder=""></form>
+	</div></div>
+				</div> <!-- / END CONTAINER -->
+
+			</section> <!-- / END CONTACT US SECTION-->
+			
+</div><!-- .site-content -->
+
+<footer id="footer" role="contentinfo">
+
+
+<div class="container">
+
+	<div class="col-md-3 company-details"><div class="icon-top red-text"><img src="images/map25-redish.png" alt="" /></div><div class="zerif-footer-address">Made in Western Colorado</div></div><div class="col-md-3 company-details"><div class="icon-top green-text"><img src="images/envelope4-green.png" alt="" /></div><div class="zerif-footer-email"><a href="mailto:hello@geodav.tech">hello@geodav.tech</a></div></div><div class="col-md-3 company-details"><div class="icon-top blue-text"><img src="images/telephone65-blue.png" alt="" /></div><div class="zerif-footer-phone"><a href="tel:904.536.0079">904.536.0079</a></div></div><div class="col-md-3 copyright"><ul class="social"><li><a target="_blank" href="https://www.facebook.com/mike.davlantes"><i class="fa fa-facebook"></i></a></li><li><a target="_blank" href="https://twitter.com/geodav_tech"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.linkedin.com/in/mikedavlantes"><i class="fa fa-linkedin"></i></a></li></ul><p id="zerif-copyright">Copyright 2016, geodav.tech</p></div>
+</div> <!-- / END CONTAINER -->
+
+</footer> <!-- / END FOOOTER  -->
+
+
+	</div><!-- mobile-bg-fix-whole-site -->
+</div><!-- .mobile-bg-fix-wrap -->
+
+
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='js/jetpack/jquery.cycle.js?ver=2.9999.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackSlideshowSettings = {"spinner":"images/slideshow-loader.gif"};
+/* ]]> */
+</script> 
+<script type='text/javascript' src='js/jetpack/slideshow-shortcode.js?ver=20121214.1'></script>
+<script type='text/javascript' src='js/jetpack/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201609'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Maraa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/jetpack/wpgroho.js?ver=4.4.2'></script>
+<script type='text/javascript' src='js/bootstrap.min.js?ver=20120206'></script>
+<script type='text/javascript' src='js/jquery.knob.js?ver=20120206'></script>
+<script type='text/javascript' src='js/scrollReveal.js?ver=20120206'></script>
+<script type='text/javascript' src='js/zerif.js?ver=20120206'></script>
+<script type='text/javascript' src='js/wp-embed.min.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.2',blog:'107790492',post:'0',tz:'0',srv:'www.geodav.tech'} ]);
+	_stq.push([ 'clickTrackerInit', '107790492', '0' ]);
+</script>
+
+</body>
+
+</html>
