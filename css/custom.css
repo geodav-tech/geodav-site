@@ -4,3 +4,10 @@
     font-weight: bolder;
 }
 
+.red-btn {
+	background: #e96656 !important;
+}
+
+.red-btn:hover {
+	background: #CB4332 !important;
+}
