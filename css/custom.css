@@ -11,3 +11,25 @@
 .red-btn:hover {
 	background: #CB4332 !important;
 }
+
+#top-bar{
+	background-color: #272727;
+	width: 100%;
+}
+
+.company-details{
+	padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.social{
+	margin-bottom: 0px !important;
+}
+
+#contact{
+    padding-bottom: 300px;
+}
+
+.icon-large {
+	font-size: 30px;
+}
