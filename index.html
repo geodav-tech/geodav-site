@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
 	<script type='text/javascript' src='js/jquery/jquery.js?ver=1.11.3'></script>
 	<script type='text/javascript' src='js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+	<link rel='shortcut icon' href='images/favicon.png' type='image/x-icon'/ >
 	<script type='text/javascript'>
 	/* <![CDATA[ */
 	var pirateFormsObject = {"errors":""};
@@ -245,7 +246,7 @@
                 <div class="member-details">
 
 										
-						<a href="projects/iowa" target="_blank"><h3 class="dark-text red-border-bottom">Iowa Expenditures</h3></a>
+						<a href="projects/iowa" target="_blank"><h3 class="dark-text red-border-bottom link-hov">Visual Analytics</h3></a>
 						
 						
 
@@ -270,7 +271,7 @@
 
 				                <div class="details">
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+				    This map simultaneously illustrates the aesthetic benefits of using a Mapbox basemap and the ability to place charts and other dynamic graphics within an info window.  The data in this map comes from a Google Sheets spreadsheet and can be easily modified by non-technical users.
                 </div>
 				
             </div>
@@ -285,7 +286,7 @@
 								
 					<figure class="profile-pic">
 
-						<img src="images/team2.png" alt="Uploaded image" />
+						<img src="images/map-spreadsheet.png" alt="Uploaded image" />
 
 					</figure>
 				
@@ -293,7 +294,7 @@
                 <div class="member-details">
 
 										
-						<h3 class="dark-text red-border-bottom">Spatial Spreadsheet</h3>
+						<a href="projects/MapSpreadsheet" target="_blank"><h3 class="dark-text red-border-bottom link-hov">Spatial Spreadsheet</h3></a>
 						
 						
 
@@ -318,7 +319,7 @@
 
 				                <div class="details">
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+				    This small web application allows a user to upload and map a .csv file (with latitude and longitude already populated) and then spatially extract data from it using a user-drawn polygon. 
                 </div>
 				
             </div>
@@ -333,7 +334,7 @@
 								
 					<figure class="profile-pic">
 
-						<img src="images/team3.png" alt="Uploaded image" />
+						<img src="images/aws-server.png" alt="Uploaded image" />
 
 					</figure>
 				
@@ -364,9 +365,8 @@
 
                 </div>
 
-				                <div class="details">
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+	                <div class="details">
+				    By configuring a PostGIS database in Amazon's Relational Database Service and installing open-source software to serve up geospatial data in the Amazon cloud, you can create a powerful and easily-scalable GIS server for cheap.
                 </div>
 				
             </div>
@@ -381,7 +381,7 @@
 								
 					<figure class="profile-pic">
 
-						<img src="images/team4.png" alt="Uploaded image" />
+						<img src="images/geo-analytics.png" alt="Uploaded image" />
 
 					</figure>
 				
@@ -413,8 +413,7 @@
                 </div>
 
 				                <div class="details">
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque
+				    Though Spotfire's web player is powerful, it lacks serious geospatial capabilities. By integrating it with Esri's JavaScript API, users can access Spotfire's expansive analysis resources via spatially driven queries.
                 </div>
 				
             </div>
@@ -509,8 +508,15 @@
         </section> -->
 
 
-        <section class="latest-news" id="latestnews"><div class="container"><div class="section-header"><h2 class="dark-text">Latest Blog Posts</h2><div class="dark-text section-legend">Just a sample of some of the really cool things we've been working on lately!</div></div><!-- END .section-header --><div class="clear"></div><div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox"><div class="item active"><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" href="http://www.geodav.tech/?p=1" title="Hello world!"><img src="images/blank-latestposts.png" alt="Hello world!" /></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.geodav.tech/?p=1" title="Hello world!">Hello world!</a></h3><p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-</div></div><!-- .latestnews-box"> --><div class="clear"></div></div></div><!-- .carousel-inner --><a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div><!-- #carousel-homepage-latestnews --></div><!-- .container --></section>			
+        <section class="latest-news" id="latestnews"><div class="container"><div class="section-header"><h2 class="dark-text">Latest Blog Posts</h2><div class="dark-text section-legend">Just a sample of some of the really cool things we've been working on lately!</div></div><!-- END .section-header --><div class="clear"></div><div id="carousel-homepage-latestnews" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox">
+        	
+        <div class="item active" id="wordpress-posts" style="height: 270px;">
+		<div class="clear"></div><div class="col-sm-3 latestnews-box"><div class="latestnews-img"><a class="latestnews-img-a" target="_blank" href="http://www.geodav.tech/blog/2016/03/08/console-loghello-world/" title="console.log(“Hello World”);"><img src="http://i1.wp.com/www.geodav.tech/blog/wp-content/uploads/2016/03/map-spreadsheet-example.png?zoom=2&amp;resize=150%2C150" alt="console.log(“Hello World”);" width="150" height="150" srcset="http://i1.wp.com/www.geodav.tech/blog/wp-content/uploads/2016/03/map-spreadsheet-example.png?zoom=2&amp;resize=150%2C150" src-orig="http://i1.wp.com/www.geodav.tech/blog/wp-content/uploads/2016/03/map-spreadsheet-example.png?resize=150%2C150" scale="2"></a></div><div class="latesnews-content"><h3 class="latestnews-title"><a href="http://www.geodav.tech/blog/2016/03/08/console-loghello-world/" title="console.log(“Hello World”);">console.log(“Hello World”);</a></h3><p>Posted 03-08-2016</p></div></div></div>
+
+
+
+
+        </div><!-- .carousel-inner --><!-- <a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a> --></div><!-- #carousel-homepage-latestnews --></div><!-- .container --></section>			
 
 <section class="contact-us" id="contact">
 				<div class="container">
@@ -525,7 +531,7 @@
 
 	<div class="container" id="top-bar">
 
-	<div class="col-md-3 company-details"><div class="icon-top red-text"><img src="images/map25-redish.png" alt="" /></div><div class="zerif-footer-address">Made in Western Colorado</div></div><div class="col-md-3 company-details"><div class="icon-top green-text"><img src="images/envelope4-green.png" alt="" /></div><div class="zerif-footer-email"><a href="mailto:hello@geodav.tech">hello@geodav.tech</a></div></div><div class="col-md-3 company-details"><div class="icon-top blue-text"><img src="images/telephone65-blue.png" alt="" /></div><div class="zerif-footer-phone"><a href="tel:904.536.0079">904.536.0079</a></div></div><div class="col-md-3 company-details"><div class="icon-top blue-text"><img src="images/web-orange.png" alt="" /></div><div class="zerif-footer-phone"><ul class="social"><li><a target="_blank" href="https://www.facebook.com/mike.davlantes"><i class="fa fa-facebook icon-large"></i></a></li><li><a target="_blank" href="https://twitter.com/geodav_tech"><i class="fa fa-twitter icon-large"></i></a></li><li><a target="_blank" href="https://www.linkedin.com/in/mikedavlantes"><i class="fa fa-linkedin icon-large"></i></a></li><li><a target="_blank" href="https://www.facebook.com/mike.davlantes"><i class="fa fa-github icon-large"></i></a></li></ul></div></div>
+	<div class="col-md-3 company-details"><div class="icon-top red-text"><img src="images/map25-redish.png" alt="" /></div><div class="zerif-footer-address footer-text">Made in Western Colorado</div></div><div class="col-md-3 company-details"><div class="icon-top green-text"><img src="images/envelope4-green.png" alt="" /></div><div class="zerif-footer-email"><a href="mailto:hello@geodav.tech" class="footer-text">hello@geodav.tech</a></div></div><div class="col-md-3 company-details"><div class="icon-top blue-text"><img src="images/telephone65-blue.png" alt="" /></div><div class="zerif-footer-phone"><a href="tel:904.536.0079" class="footer-text">904.536.0079</a></div></div><div class="col-md-3 company-details"><div class="icon-top blue-text"><img src="images/web-orange.png" alt="" /></div><div class="zerif-footer-phone"><ul class="social"><li><a target="_blank" href="https://www.facebook.com/mike.davlantes"><i class="fa fa-facebook icon-large"></i></a></li><li><a target="_blank" href="https://twitter.com/geodav_tech"><i class="fa fa-twitter icon-large"></i></a></li><li><a target="_blank" href="https://www.linkedin.com/in/mikedavlantes"><i class="fa fa-linkedin icon-large"></i></a></li><li><a target="_blank" href="https://github.com/geodav-tech"><i class="fa fa-github icon-large"></i></a></li></ul></div></div>
 
 	<!-- <div class="col-md-3 copyright"><ul class="social"><li><a target="_blank" href="https://www.facebook.com/mike.davlantes"><i class="fa fa-facebook"></i></a></li><li><a target="_blank" href="https://twitter.com/geodav_tech"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" href="https://www.linkedin.com/in/mikedavlantes"><i class="fa fa-linkedin"></i></a></li></ul><p id="zerif-copyright">Copyright 2016, geodav.tech</p></div> -->
 </div>
@@ -579,6 +585,7 @@ var WPGroHo = {"my_hash":""};
 	_stq.push([ 'view', {v:'ext',j:'1:3.9.2',blog:'107790492',post:'0',tz:'0',srv:'www.geodav.tech'} ]);
 	_stq.push([ 'clickTrackerInit', '107790492', '0' ]);
 </script>
+<!-- <script type="text/javascript" src="js/wordpress-posts.js"></script> -->
 
 </body>
 
