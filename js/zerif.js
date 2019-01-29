@@ -10,11 +10,11 @@ jQuery(window).load(function() {
 
     // will first fade out the loading animation
 
-    jQuery(".status").fadeOut();
+    // jQuery(".status").fadeOut();
 
-    // will fade out the whole DIV that covers the website.
+    // // will fade out the whole DIV that covers the website.
 
-    jQuery(".preloader").delay(1000).fadeOut("slow");
+    // jQuery(".preloader").delay(1000).fadeOut("slow");
 
 
     jQuery('.carousel').carousel('pause');
@@ -275,83 +275,6 @@ jQuery(document).ready(function(){
     });
 
 });
-
-
-
-/* ================================
-
- ===  KNOB                      ====
-
- ================================= */
-
-jQuery(function() {
-
-    jQuery(".skill1").knob({
-
-        'max':100,
-
-        'width': 64,
-
-        'readOnly':true,
-
-        'inputColor':' #FFFFFF ',
-
-        'bgColor':' #222222 ',
-
-        'fgColor':' #e96656 '
-
-    });
-
-    jQuery(".skill2").knob({
-
-        'max':100,
-
-        'width': 64,
-
-        'readOnly':true,
-
-        'inputColor':' #FFFFFF ',
-
-        'bgColor':' #222222 ',
-
-        'fgColor':' #34d293 '
-
-    });
-
-    jQuery(".skill3").knob({
-
-        'max': 100,
-
-        'width': 64,
-
-        'readOnly': true,
-
-        'inputColor':' #FFFFFF ',
-
-        'bgColor':' #222222 ',
-
-        'fgColor':' #3ab0e2 '
-
-    });
-
-    jQuery(".skill4").knob({
-
-        'max': 100,
-
-        'width': 64,
-
-        'readOnly': true,
-
-        'inputColor':' #FFFFFF ',
-
-        'bgColor':' #222222 ',
-
-        'fgColor':' #E7AC44 '
-
-    });
-
-});
-
 
 
 /* ======================================
