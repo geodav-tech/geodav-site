@@ -52,7 +52,8 @@ read more (secondary) -> takes you to case studies grid
 no header, just drop some testimonials here
 
 
-(instead of pricing page)
+(instead of pricing page) how to start
+focus on what matters / focus on your strengths / save time and money / 
 stop operating from excel sheets and provide robust solutions for your business in 4 easy steps:
 1. Let's meet and explore your needs
 2. We'll come back with potential solutions
