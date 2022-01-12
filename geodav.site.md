@@ -2,7 +2,7 @@
 about -> single about page
 services -> services grid
     one for each of the categories under "what we do"?
-Projects -> cases grid (w/ categories)
+Portfolio -> cases grid (w/ categories)
 contact -> single contact page
 
 
