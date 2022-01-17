@@ -30,7 +30,7 @@ Software systems integration
 
 who we are
 
-geodav.tech is a software development agency specialized in creating web pages and mobile applications to help your business make faster and more informed decisions. Based in Grand Junction, Colorado, we have over 10 years of experience providing quality software solutions around the United States.
+geodav.tech is a software development agency specialized in creating web pages and mobile applications to help you make faster and more informed decisions. Based in Grand Junction, Colorado, we have over 10 years of experience providing quality software solutions around the United States.
 
 let's talk (secondary)
 
@@ -55,10 +55,10 @@ no header, just drop some testimonials here
 (instead of pricing page) how to start
 focus on what matters / focus on your strengths / save time and money / 
 stop operating from excel sheets and provide robust solutions for your business in 4 easy steps:
-1. Let's meet and explore your needs
-2. We'll come back with potential solutions
-3. choose what's best for you and we'll build it
-4. run your business like never before!
+1. Let's meet and explore your needs— consultations are free!
+2. We'll come back with potential solutions and present them.
+3. Choose the option that's best for you and we'll build it.
+4. Use your new tools to unleash insights like never before!
 
 
 (instead of why choose us)
@@ -76,6 +76,8 @@ Start building your solution! (primary)
 standalone pages
 mapbox developers
 quickbooks integration
+
+you can be the cool kid in the office, using high-tech tools to quickly gain insights that astound your colleagues.
 
 what are you looking for in a software agency website?
 # 1 Solution / expertise in the area in question
