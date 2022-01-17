@@ -64,10 +64,12 @@ stop operating from excel sheets and provide robust solutions for your business 
 (instead of why choose us)
 1, 2, 3 guarantee
 
-We're with you every step of the way, even after the project is completed. We'll check in 1, 2, and 3 months after you've started using your new tools to make sure you're completely satisfied and that everything is working as intended. Our entire team is based in Western Colorado and we're always just an email or a phone call away!
+<handshake icon> We're with you every step of the way, even after the project is completed.
+<calendar icon> We'll check in 1, 2, and 3 months after you've started using your new tools to make sure you're completely satisfied and that everything is working as intended.
+<map icon> Our entire team is based in Western Colorado and we're always just an email or a phone call away!
 
 yellow banner
-Ready to solve your company's data problems?
+Ready to solve your data problems?
 Start building your solution! (primary)
 
 
