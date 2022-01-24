@@ -72,12 +72,21 @@ yellow banner
 Ready to solve your data problems?
 Start building your solution! (primary)
 
+footer
+
+logo
+Boost Labs converts your complex data into compelling visuals that break down silos & empower your teams, your company, and your stakeholders to act.
+We recommend, sell and integrate the industry's top geospatial data and software and we're the best at it since 1993. Get to know us and start today!
+
+contact info
+
+services
+
+site map
 
 
 
-standalone pages
-mapbox developers
-quickbooks integration
+
 
 you can be the cool kid in the office, using high-tech tools to quickly gain insights that astound your colleagues.
 
@@ -93,3 +102,24 @@ That gets the visitor's attention... You don't look for a coffee shop unless you
 # 4 Wow! You hit the nail on the head.... Who are you? Tell me more about your successes.. And yes, give me references or show me that you are a thought leader in this area
 
 # 5 Yes! I feel good about this... Don't make it hard for me to get in touch with you... What should I do next? Some call it a "Call to Action!"
+
+
+
+
+home
+about
+services
+    Data analysis & visualization
+    Interactive data dashboards
+    Web design & development
+    Mobile app development
+    Systems integration
+    mapbox development?
+    quickbooks integration?
+portfolio
+    caic mobile app
+    caic avalanche explorer
+    spectra stacker
+    JFS
+    chronocards
+contact
