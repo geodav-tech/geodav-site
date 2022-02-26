@@ -1,0 +1,50 @@
+/*general css*/
+:root {
+  --geodav-red: #d80027;
+  --geodav-grey: #7f7f7f;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading-font {
+  font-family: 'Montserrat';
+  color: #333333;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+body {
+  font-family: 'Open Sans';
+  color: var(--geodav-grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.section-header-line {
+  max-width: 100%;
+  width: 80px;
+  height: 4px;
+  margin: 0 auto 50px;
+  background-color: var(--geodav-red);
+  border-radius: 2px;
+}
+.animate-delay-200ms {
+  animation-delay: 0.2s;
+}
+.animate-delay-400ms {
+  animation-delay: 0.4s;
+}
+.animate-delay-600ms {
+  animation-delay: 0.6s;
+}
+ul {
+  padding-left: 1rem;
+}
+a {
+  color: var(--geodav-red);
+}
+a:hover {
+  color: var(--geodav-grey);
+}
+.bold {
+  font-weight: 600;
+}
+.text-black {
+  color: black;
+}

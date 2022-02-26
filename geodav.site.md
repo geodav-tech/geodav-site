@@ -106,20 +106,18 @@ That gets the visitor's attention... You don't look for a coffee shop unless you
 
 
 
-home
-about
-services
-    Data analysis & visualization
-    Interactive data dashboards
-    Web design & development
-    Mobile app development
-    Systems integration
-    mapbox development? call it "interactive maps"
-    quickbooks integration?
-portfolio
-    caic mobile app
-    caic avalanche explorer
-    spectra stacker
-    JFS
-    chronocards
-contact
+*home - /
+*about - /about/
+services - /services/
+    Data analysis & visualization - /services/interactive-dashboards/
+    Interactive dashboards - /services/interactive-dashboards/
+    Web design & development - /services/web-design-and-development/
+    Mobile app development - /services/mobile-app-development/
+    Systems integration (include quickbooks integration here) - /services/systems-integration/
+    Interactive maps (include mapbox here) - /services/interactive-maps/
+portfolio - /portfolio/
+    caic avalanche explorer - /portfolio/caic-interactive-dashboard/
+    intermx interactive map- /portfolio/intermx-interactive-map/
+    spectra stacker - /portfolio/fgs-well-log-analysis/
+    someday: chronocards, JFS, caic mobile app, kaart stuff, eureka, buck the budget, passur, etc
+*contact - /contact/
