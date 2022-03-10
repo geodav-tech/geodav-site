@@ -20,5 +20,9 @@
     "gridsome": {
       "sharp": "0.29.3"
     }
+  },
+  "devDependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4"
   }
 }
