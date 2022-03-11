@@ -15,6 +15,15 @@ module.exports = {
         template: './src/templates/Service.vue', // Optional
         route: '/services/:slug'
       }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'PortfolioItem', // Required
+        baseDir: './src/portfolio', // Where .md files are located
+        template: './src/templates/PortfolioItem.vue', // Optional
+        route: '/portfolio/:slug'
+      }
     }
   ]
 }
