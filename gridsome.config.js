@@ -10,11 +10,10 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Documentation', // Required
-        baseDir: './content/docs', // Where .md files are located
-        pathPrefix: '/docs', // Add route prefix. Optional
-        template: './src/templates/Documentation.vue', // Optional
-        route: '/docs/:slug'
+        typeName: 'Service', // Required
+        baseDir: './src/services', // Where .md files are located
+        template: './src/templates/Service.vue', // Optional
+        route: '/services/:slug'
       }
     }
   ]

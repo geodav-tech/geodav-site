@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="mb-4">We Bring Clarity to Your Data</h1>
+            <h1 class="mb-4">WIP SERVICES</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
           <div class="col-md-6">
@@ -24,7 +24,7 @@
 
 <page-query>
 query {
-  services: allDocumentation {
+  services: allService {
     edges {
       node {
         id
