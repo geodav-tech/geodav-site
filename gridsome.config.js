@@ -13,7 +13,7 @@ module.exports = {
         typeName: 'Service', // Required
         baseDir: './src/services', // Where .md files are located
         template: './src/templates/Service.vue', // Optional
-        route: '/services/:slug'
+        pathPrefix: '/services'
       }
     },
     {
@@ -22,7 +22,7 @@ module.exports = {
         typeName: 'PortfolioItem', // Required
         baseDir: './src/portfolio', // Where .md files are located
         template: './src/templates/PortfolioItem.vue', // Optional
-        route: '/portfolio/:slug'
+        pathPrefix: '/portfolio'
       }
     }
   ]
