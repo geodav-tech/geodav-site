@@ -24,6 +24,9 @@
             <primary-cta style='margin-left: 16px;' />
           </div>
         </div>
+        <div class="text-center" style="height: 80px; margin-top: -80px;">
+          <svg-icon :iconFile="chevronIcon" class="mdi-down-chevron" stroke-width="0.1"/>
+        </div>
       </div>
     </section>
     <!-- spacer for content below video, 108px is navbar height. -->
@@ -396,15 +399,20 @@
 </template>
 
 <script>
-import PrimaryCta from '../components/PrimaryCta.vue'
-import SecondaryCta from '../components/SecondaryCta.vue'
-import TestimonialCard from '../components/TestimonialCard.vue'
+import PrimaryCta from '../components/PrimaryCta'
+import SecondaryCta from '../components/SecondaryCta'
+import TestimonialCard from '../components/TestimonialCard'
+import SvgIcon from '../components/SvgIcon'
+import { mdiChevronDownCircleOutline } from '@mdi/js'
 
 export default {
-	components: { SecondaryCta, PrimaryCta, TestimonialCard },
+	components: { SecondaryCta, PrimaryCta, TestimonialCard, SvgIcon },
   metaInfo: {
     title: 'Interactive dashboards & more'
-  }
+  },
+  data: () => ({
+    chevronIcon: mdiChevronDownCircleOutline,
+  })
 }
 </script>
 
@@ -457,6 +465,12 @@ export default {
   letter-spacing: 10px;
   font-weight: 600;
   font-size: 16px;
+}
+#fullwidth-video .mdi-down-chevron {
+  color: white;
+  fill: white;
+  width: 50px;
+  height: 50px;
 }
 
 /*what we do section css*/
