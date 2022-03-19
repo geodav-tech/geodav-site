@@ -37,13 +37,11 @@ query {
 </page-query>
 
 <script>
-import SvgIcon from '../components/SvgIcon'
 import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
     title: 'Services'
   },
-  components: { SvgIcon },
   data: () => ({
     chevron: mdiChevronRight,
   })

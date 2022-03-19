@@ -20,11 +20,9 @@
 </template>
 
 <script>
-import SvgIcon from './SvgIcon.vue'
 import { mdiStar, mdiFormatQuoteOpen } from '@mdi/js'
 
 export default {
-  components: { SvgIcon },
   name: 'TestimonialCard',
   props: {
     name: String,

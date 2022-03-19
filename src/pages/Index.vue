@@ -402,11 +402,10 @@
 import PrimaryCta from '../components/PrimaryCta'
 import SecondaryCta from '../components/SecondaryCta'
 import TestimonialCard from '../components/TestimonialCard'
-import SvgIcon from '../components/SvgIcon'
 import { mdiChevronDownCircleOutline } from '@mdi/js'
 
 export default {
-	components: { SecondaryCta, PrimaryCta, TestimonialCard, SvgIcon },
+	components: { SecondaryCta, PrimaryCta, TestimonialCard },
   metaInfo: {
     title: 'Interactive dashboards & more'
   },

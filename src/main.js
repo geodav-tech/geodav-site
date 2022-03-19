@@ -14,6 +14,7 @@ import '~/assets/css/styles.css'
 import DefaultLayout from '~/layouts/Default.vue'
 import PrimaryCta from '~/components/PrimaryCta.vue'
 import SecondaryCta from '~/components/SecondaryCta.vue'
+import SvgIcon from '~/components/SvgIcon'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -22,6 +23,7 @@ export default function (Vue, { router, head, isClient }) {
   // i suspect we'll use this a lot.
   Vue.component('PrimaryCta', PrimaryCta)
   Vue.component('SecondaryCta', SecondaryCta)
+  Vue.component('SvgIcon', SvgIcon)
 
   // browser only, bc it breaks during SSR since the server has no window
   if (isClient) {

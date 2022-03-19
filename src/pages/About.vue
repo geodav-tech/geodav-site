@@ -44,13 +44,11 @@
 </template>
 
 <script>
-import SvgIcon from '../components/SvgIcon'
 import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
     title: 'About us'
   },
-  components: { SvgIcon },
   data: () => ({
     chevron: mdiChevronRight,
   })
