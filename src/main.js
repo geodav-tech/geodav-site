@@ -11,9 +11,9 @@ import 'animate.css'
 // our custom global styles
 import '~/assets/css/styles.css'
 
-import DefaultLayout from '~/layouts/Default.vue'
-import PrimaryCta from '~/components/PrimaryCta.vue'
-import SecondaryCta from '~/components/SecondaryCta.vue'
+import DefaultLayout from '~/layouts/Default'
+import PrimaryCta from '~/components/PrimaryCta'
+import SecondaryCta from '~/components/SecondaryCta'
 import SvgIcon from '~/components/SvgIcon'
 
 export default function (Vue, { router, head, isClient }) {
