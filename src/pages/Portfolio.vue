@@ -29,7 +29,6 @@ query {
         id
         title
         excerpt
-        slug
       }
     }
   }
