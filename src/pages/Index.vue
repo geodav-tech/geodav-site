@@ -399,13 +399,11 @@
 </template>
 
 <script>
-import PrimaryCta from '../components/PrimaryCta'
-import SecondaryCta from '../components/SecondaryCta'
 import TestimonialCard from '../components/TestimonialCard'
 import { mdiChevronDownCircleOutline } from '@mdi/js'
 
 export default {
-	components: { SecondaryCta, PrimaryCta, TestimonialCard },
+	components: { TestimonialCard },
   metaInfo: {
     title: 'Interactive dashboards & more'
   },
