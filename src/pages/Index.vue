@@ -15,7 +15,7 @@
         <div class="d-flex h-100 text-left align-items-center">
           <div class="text-white" style="max-width: 650px;">
             <h1 class='video-header'>
-              We build software to efficiently visualize & analyze your data
+              We build dashboards to efficiently visualize & analyze your data
             </h1>
             <p class="wb-75 video-subheader">
               Web & mobile app agency
