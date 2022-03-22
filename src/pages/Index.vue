@@ -40,57 +40,14 @@
           <div class="section-header-line"></div>
         </div>
         <div class="row">
-          <!-- 0 delay -->
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 animate__animated animate__fadeInUp wow">
-              <g-link to="/services/interactive-dashboards/">
+          <div class="col-lg-3 col-md-6 mb-3" v-for="service in $page.services.edges" :key="service.node.id">
+            <div class="card h-100 animate__animated animate__fadeInUp wow" :class="`animate-delay-${service.node.index * 200}ms`">
+              <g-link :to="service.node.path">
                 <div class="card-body text-center">
-                  <h4 class="card-title my-4">Interactive Dashboards</h4>
-                  <img class="mb-4 px-3 img-fluid" src="../assets/media/images/interactive-dashboards.svg" alt="" loading="lazy" />
+                  <h4 class="card-title my-4">{{service.node.title}}</h4>
+                  <img class="mb-4 px-3 img-fluid" :src="require(`../assets/media/images/${service.node.coverImage}`)" alt="" loading="lazy" />
                   <p class="card-text mb-4">
-                    Increase your company's revenue by making faster and more informed decisions using your data.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <!-- 200 delay -->
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 animate__animated animate__fadeInUp wow animate-delay-200ms">
-              <g-link to="/services/web-design-and-development/">
-                <div class="card-body text-center">
-                  <h4 class="card-title my-4">Web Design & Development</h4>
-                  <img class="mb-4 px-3 img-fluid" src="../assets/media/images/web-design.svg" alt="" loading="lazy" />
-                  <p class="card-text mb-4">
-                    Make your workflow more efficient, effective, and productive with a custom web application.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <!-- 400 delay -->
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 animate__animated animate__fadeInUp wow animate-delay-400ms">
-              <g-link to="/services/mobile-app-development/">
-                <div class="card-body text-center">
-                  <h4 class="card-title my-4">Mobile App Development</h4>
-                  <img class="mb-4 px-3 img-fluid" src="../assets/media/images/mobile-app-development.svg" alt="" loading="lazy" />
-                  <p class="card-text mb-4">
-                    Collect and analyze data on the go to feel confident in your decisions no matter where you are.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <!-- 600 delay -->
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 animate__animated animate__fadeInUp wow animate-delay-600ms">
-              <g-link to="/services/systems-integration/">
-                <div class="card-body text-center">
-                  <h4 class="card-title my-4">Software Systems Integration</h4>
-                  <img class="mb-4 px-3 img-fluid" src="../assets/media/images/systems-integration.svg" alt="" loading="lazy" />
-                  <p class="card-text mb-4">
-                    Gain insights using data you already have by leveraging the power of your existing tools.
+                    {{service.node.tagline}}
                   </p>
                 </div>
               </g-link>
@@ -397,6 +354,23 @@
     </section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  services: allService(filter: { index: { in: [0, 1, 2, 3] }}, sortBy: "index", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        tagline
+        coverImage
+        path
+        index
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import TestimonialCard from '../components/TestimonialCard'
