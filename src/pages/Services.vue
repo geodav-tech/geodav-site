@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="mb-4">WIP SERVICES</h1>
+            <h1 class="mb-4">Services Designed to Support You</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
           <div class="col-md-6">
@@ -29,7 +29,10 @@ query {
       node {
         id
         title
-        excerpt
+        tagline
+        summary
+        coverImage
+        path
       }
     }
   }
