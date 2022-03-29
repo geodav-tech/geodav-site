@@ -47,7 +47,7 @@
 import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'About'
   },
   data: () => ({
     chevron: mdiChevronRight,

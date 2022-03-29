@@ -379,7 +379,7 @@ import { mdiChevronDownCircleOutline } from '@mdi/js'
 export default {
 	components: { TestimonialCard },
   metaInfo: {
-    title: 'Interactive dashboards & more'
+    title: 'Interactive Dashboards & More'
   },
   data: () => ({
     chevronIcon: mdiChevronDownCircleOutline,
