@@ -19,10 +19,10 @@
                     <div class="col-md-6 mb-4">
                       <img class="img-fluid" :src="require(`../assets/media/images/${service.node.coverImage}`)" alt="" loading="lazy" />
                     </div>
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-1">
                       <p class="card-text text-start">
                         <ul>
-                          <li v-for="(ind, text) in service.node.summary" :key="`${ind}${text}`">{{text}}</li>
+                          <li v-for="(text, ind) in service.node.summary" :key="`${ind}${text}`" v-html="text" />
                         </ul>
                       </p>
                     </div>
