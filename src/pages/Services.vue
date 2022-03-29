@@ -63,14 +63,10 @@ query {
 </page-query>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
     title: 'Services'
-  },
-  data: () => ({
-    chevron: mdiChevronRight,
-  })
+  }
 }
 </script>
 <style scoped>

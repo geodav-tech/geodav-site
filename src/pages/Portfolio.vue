@@ -36,23 +36,13 @@ query {
 </page-query>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
     title: 'Portfolio'
-  },
-  data: () => ({
-    chevron: mdiChevronRight,
-  })
+  }
 }
 </script>
 <style scoped>
-.mdi-right-chevron {
-  color: var(--geodav-red);
-  fill: var(--geodav-red);
-  width: 100px;
-  height: 100px;
-}
 .location-box {
   background-color: var(--geodav-red);
   color: white;
