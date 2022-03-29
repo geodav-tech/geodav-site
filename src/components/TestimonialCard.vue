@@ -20,8 +20,11 @@
 </template>
 
 <script>
+import SvgIcon from '~/components/SvgIcon'
+
 export default {
   name: 'TestimonialCard',
+  components: { SvgIcon },
   props: {
     name: String,
     url: String,

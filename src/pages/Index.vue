@@ -374,9 +374,11 @@ query {
 
 <script>
 import TestimonialCard from '../components/TestimonialCard'
+import SecondaryCta from '~/components/SecondaryCta'
+import SvgIcon from '~/components/SvgIcon'
 
 export default {
-	components: { TestimonialCard },
+	components: { TestimonialCard, SecondaryCta, SvgIcon },
   metaInfo: {
     title: 'Interactive Dashboards & More'
   }

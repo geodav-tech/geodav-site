@@ -41,7 +41,10 @@
 </template>
 
 <script>
+import SpanCallout from '~/components/SpanCallout'
+
 export default {
+  components: { SpanCallout },
   metaInfo: {
     title: 'About'
   }
