@@ -22,15 +22,15 @@ export default {
     iconMarkup() {
       // if it's an mdi icon, you can pass @mdi<icon_name> and we'll fetch the file from icon-filter.js, eg @mdiChevronRight
       // otherwise you must pass complete SVG path markup that you've already fetched from a file somewhere.
-      if (this.$props.icon.includes('@mdi')) {
-        let fetchedIcon = require('./icon-filter')[this.$props.icon.replace('@', '')]
+      if (this.icon.includes('@mdi')) {
+        let fetchedIcon = require('./icon-filter')[this.icon.replace('@', '')]
         if (fetchedIcon) {
           return fetchedIcon
         } else {
-          throw `${this.$props.icon} was not found in icon-filter.js. Did you forget to export it?`
+          throw `${this.icon} was not found in icon-filter.js. Did you forget to export it?`
         }
       } else {
-        return this.$props.icon
+        return this.icon
       }
     }
   }

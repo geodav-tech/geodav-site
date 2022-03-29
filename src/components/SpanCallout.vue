@@ -1,6 +1,6 @@
 <template>
   <span style="display: inline-flex;">
-    <svg-icon :icon="$props.icon" class="span-callout-icon" style="min-width: 8%; height: auto;"/>
+    <svg-icon :icon="icon" class="span-callout-icon" style="min-width: 8%; height: auto;"/>
     <h3 class="mb-0">
       <slot/>
     </h3>
