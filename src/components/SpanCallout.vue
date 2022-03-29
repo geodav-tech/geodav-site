@@ -1,0 +1,25 @@
+<template>
+  <span style="display: inline-flex;">
+    <svg-icon :icon="$props.icon" class="span-callout-icon" style="min-width: 8%; height: auto;"/>
+    <h3 class="mb-0">
+      <slot/>
+    </h3>
+  </span>
+</template>
+<script>
+export default {
+  props: {
+    icon: {
+      default: '@mdiChevronRight'
+    }
+  }
+}
+</script>
+<style scoped>
+.span-callout-icon {
+  color: var(--geodav-red);
+  fill: var(--geodav-red);
+  width: 100px;
+  height: 100px;
+}
+</style>

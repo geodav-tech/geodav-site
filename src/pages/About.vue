@@ -11,12 +11,9 @@
             <p>
               <span class="bold text-black">You've already got enough on your plate—</span> you shouldn't be stuck wasting time muddling through Excel sheets and clumsy workflows to try to gain insights from your data.
             </p>
-            <span style="display: inline-flex;">
-              <svg-icon icon="@mdiChevronRight" class="mdi-right-chevron" style="min-width: 24px; height: auto;"/>
-              <h3 class="mb-0">
-                We are experts at web development, data analysis, and building powerful, intuitive dashboards.
-              </h3>
-            </span>
+            <span-callout>
+              We are experts at web development, data analysis, and building powerful, intuitive dashboards.
+            </span-callout>
             <p class="mb-0">
               Working alongside your team, we build interactive dashboards so you can understand your data, increase team productivity, and grow your revenue. Our software engineers and design experts have <span class="bold text-black">over 10 years of experience</span> providing business solutions for clients across the United States.
             </p>
@@ -51,12 +48,6 @@ export default {
 }
 </script>
 <style scoped>
-.mdi-right-chevron {
-  color: var(--geodav-red);
-  fill: var(--geodav-red);
-  width: 100px;
-  height: 100px;
-}
 .location-box {
   background-color: var(--geodav-red);
   color: white;

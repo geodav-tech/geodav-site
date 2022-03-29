@@ -15,6 +15,7 @@ import DefaultLayout from '~/layouts/Default'
 import PrimaryCta from '~/components/PrimaryCta'
 import SecondaryCta from '~/components/SecondaryCta'
 import SvgIcon from '~/components/SvgIcon'
+import SpanCallout from '~/components/SpanCallout'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -24,6 +25,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('PrimaryCta', PrimaryCta)
   Vue.component('SecondaryCta', SecondaryCta)
   Vue.component('SvgIcon', SvgIcon)
+  Vue.component('SpanCallout', SpanCallout)
 
   // browser only, bc it breaks during SSR since the server has no window
   if (isClient) {
