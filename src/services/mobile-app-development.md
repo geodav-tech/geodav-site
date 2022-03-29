@@ -9,7 +9,6 @@ coverImage: "mobile-app-development.svg"
 index: 2
 ---
 ### {{ $frontmatter.title }}
-### {{ $frontmatter.meta.path }}
 
 > hello quote
 

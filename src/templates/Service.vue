@@ -8,6 +8,9 @@
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
         </div>
+        col 6 span callout with tagline & summary bullet points
+        col 6 image
+        
         <VueRemarkContent />
       </div>
     </section>
