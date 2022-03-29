@@ -129,7 +129,7 @@
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://eurekasciencemuseum.org/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/eureka.png" alt="Eureka! McConnell Science Museum" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/eureka.png" alt="Eureka McConnell Science Museum" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
