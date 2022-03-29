@@ -7,14 +7,34 @@
             <h1 class="mb-4">Services Designed to Support You</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
-          <div class="col-md-6">
-            <div v-for="service in $page.services.edges" :key="service.node.id">
-              {{service.id}}
-              {{service}}
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 mb-4" v-for="service in $page.services.edges" :key="`svc${service.node.id}`">
+            <div class="card h-100 animate__animated animate__fadeInUp wow" :class="`animate-delay-${service.node.index * 200}ms`">
+              <g-link :to="service.node.path">
+                <div class="card-body text-center">
+                  <h3 class="card-title my-3">{{service.node.title}}</h3>
+                  <h6 class="mb-4 mx-4">{{service.node.tagline}}</h6>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <img class="img-fluid" :src="require(`../assets/media/images/${service.node.coverImage}`)" alt="" loading="lazy" />
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <p class="card-text text-start">
+                        <ul>
+                          <li v-for="(ind, text) in service.node.summary" :key="`${ind}${text}`">{{text}}</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="col-12 mb-2">
+                      <g-link :to="service.node.path" class="read-more-link">
+                        Read More
+                      </g-link>
+                    </div>
+                  </div>
+                </div>
+              </g-link>
             </div>
-          </div>
-          <div class="col-md-6 d-none d-md-block">
-            <img class="p-2 img-fluid" src="../assets/media/images/about-geodav-team.svg" alt="" loading="lazy" />
           </div>
         </div>
       </div>
@@ -24,7 +44,7 @@
 
 <page-query>
 query {
-  services: allService {
+  services: allService(sortBy: "index", order: ASC) {
     edges {
       node {
         id
@@ -33,6 +53,7 @@ query {
         summary
         coverImage
         path
+        index
       }
     }
   }
@@ -51,23 +72,15 @@ export default {
 }
 </script>
 <style scoped>
-.mdi-right-chevron {
-  color: var(--geodav-red);
-  fill: var(--geodav-red);
-  width: 100px;
-  height: 100px;
+.card > a {
+  text-decoration: none;
+  color: var(--geodav-grey);
 }
-.location-box {
-  background-color: var(--geodav-red);
-  color: white;
-  width: 75%;
+.card img {
+  height: 200px;
 }
-.location-box > h3 {
-  color: white;
-}
-@media screen and (max-width: 991px) {
-  .location-box {
-    width: 100%;
-  }
+.read-more-link {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
 }
 </style>
