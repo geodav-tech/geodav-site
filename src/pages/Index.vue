@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="text-center" style="height: 80px; margin-top: -80px;">
-          <svg-icon :iconFile="chevronIcon" class="mdi-down-chevron" stroke-width="0.1"/>
+          <svg-icon icon="@mdiChevronDownCircleOutline" class="mdi-down-chevron" stroke-width="0.1"/>
         </div>
       </div>
     </section>
@@ -374,16 +374,12 @@ query {
 
 <script>
 import TestimonialCard from '../components/TestimonialCard'
-import { mdiChevronDownCircleOutline } from '@mdi/js'
 
 export default {
 	components: { TestimonialCard },
   metaInfo: {
     title: 'Interactive Dashboards & More'
-  },
-  data: () => ({
-    chevronIcon: mdiChevronDownCircleOutline,
-  })
+  }
 }
 </script>
 

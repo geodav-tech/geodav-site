@@ -8,20 +8,18 @@
     <b><a :href="url">{{title}}</a></b>
     <br>
     <span style="display: inline-flex;">
-      <svg-icon :iconFile="quoteIcon" class="mdi-format-quote-open" style="min-width: 24px;"/>
+      <svg-icon icon="@mdiFormatQuoteOpen" class="mdi-format-quote-open" style="min-width: 24px;"/>
       <p>
         {{quote}}
       </p>
     </span>
     <span v-for="(e, i) in starCount" :key="i">
-      <svg-icon :iconFile="starIcon" class="mdi-star"/>
+      <svg-icon icon="@mdiStar" class="mdi-star"/>
     </span>
   </div>
 </template>
 
 <script>
-import { mdiStar, mdiFormatQuoteOpen } from '@mdi/js'
-
 export default {
   name: 'TestimonialCard',
   props: {
@@ -30,11 +28,7 @@ export default {
     title: String,
     quote: String,
     starCount: Number
-  },
-  data: () => ({
-    starIcon: mdiStar,
-    quoteIcon: mdiFormatQuoteOpen,
-  })
+  }
 }
 </script>
 <style scoped>

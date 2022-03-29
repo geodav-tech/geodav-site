@@ -12,7 +12,7 @@
               <span class="bold text-black">You've already got enough on your plate—</span> you shouldn't be stuck wasting time muddling through Excel sheets and clumsy workflows to try to gain insights from your data.
             </p>
             <span style="display: inline-flex;">
-              <svg-icon :iconFile="chevron" class="mdi-right-chevron" style="min-width: 24px; height: auto;"/>
+              <svg-icon icon="@mdiChevronRight" class="mdi-right-chevron" style="min-width: 24px; height: auto;"/>
               <h3 class="mb-0">
                 We are experts at web development, data analysis, and building powerful, intuitive dashboards.
               </h3>
@@ -44,14 +44,10 @@
 </template>
 
 <script>
-import { mdiChevronRight } from '@mdi/js'
 export default {
   metaInfo: {
     title: 'About'
-  },
-  data: () => ({
-    chevron: mdiChevronRight,
-  })
+  }
 }
 </script>
 <style scoped>
