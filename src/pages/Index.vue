@@ -114,62 +114,62 @@
         <div class="row d-flex flex-wrap align-items-center justify-content-center wow animate__animated animate__zoomIn">
           <div class="col-3 col-lg-2">
             <a href="https://www.brown.edu/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/brown.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/brown.png" alt="Brown University" />
             </a>
           </div>
           <div class="col-3 col-lg-1">
             <a href="https://jfsconsultingco.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/jfs.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/jfs.png" alt="Johnston Financial Services" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://www.avalanche.state.co.us/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/caic.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/caic.png" alt="Colorado Avalanche Information Center" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://eurekasciencemuseum.org/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/eureka.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/eureka.png" alt="Eureka! McConnell Science Museum" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://fieldgeoservices.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/fgs.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/fgs.png" alt="Field Geo Services" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://www.intermx.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/intermx.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/intermx.png" alt="Intermx" />
             </a>
           </div>
           <div class="col-3 col-lg-1">
             <a href="https://www.kaart.com">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/kaart.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/kaart.png" alt="Kaart" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://www.gomercatus.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/mercatus.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/mercatus.png" alt="Mercatus" />
             </a>
           </div>
           <div class="col-3 col-lg-1">
             <a href="https://www.nps.gov/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/nps.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/nps.png" alt="National Park Service" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://passur.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/passur.jpeg" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/passur.jpeg" alt="Passur Aerospace" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://www.solimarinternational.com/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/solimar.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/solimar.png" alt="Solimar International" />
             </a>
           </div>
           <div class="col-3 col-lg-2">
             <a href="https://www.telluride-co.gov/">
-              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/telluride.png" />
+              <g-image class="img-fluid" loading="lazy" src="../assets/media/logos/others/telluride.png" alt="Town of Telluride, Colorado" />
             </a>
           </div>
           <div class="col-4 col-lg-2 text-center">
