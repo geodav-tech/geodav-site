@@ -10,7 +10,7 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 mb-4" v-for="service in $page.services.edges" :key="`svc${service.node.id}`">
-            <div class="card h-100 animate__animated animate__fadeInUp wow" :class="`animate-delay-${service.node.index * 200}ms`">
+            <div class="card h-100 animate__animated animate__fadeInUp" :class="`animate-delay-${service.node.index * 200}ms`">
               <g-link :to="service.node.path">
                 <div class="card-body text-center">
                   <h3 class="card-title my-3">{{service.node.title}}</h3>

@@ -43,8 +43,15 @@ export default function (Vue, { router, head, isClient }) {
       window._hsq.push(['trackPageView'])
 
       // hacky shit to get it to WOW each page without needing to manually call it.
-      setTimeout(() => {
-        wow.init()
+      let scrolled = false // only start wow after the window has scrolled to not fuck up SEO
+      setTimeout(() => { // needed for some reason.
+        document.addEventListener('scroll', () => {
+          if (!scrolled) {
+            console.log('initting wow')
+            scrolled = true
+            wow.init()
+          }
+        })
       }, 50)
     })
   }
