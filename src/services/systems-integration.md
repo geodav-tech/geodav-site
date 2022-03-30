@@ -9,10 +9,4 @@ summary: [
 coverImage: "systems-integration.svg"
 index: 3
 ---
-### {{ $frontmatter.title }}
-
-> hello quote
-
-```
-big code
-```
+You certainly already have many robust software systems that make your business run: maybe Outlook for emails, QuickBooks Online for financials, HubSpot as a CRM, and many more. We can connect all these platforms in a way that allows you complete work faster, ensures total consistency, and <b class="text-black">eliminates the need to manually import and export data</b> to keep everything up to date. We can help you configure these platforms to automatically pull data from your partners and clients, streamlining data sharing and <b class="text-black">increasing collaboration speed</b>.

@@ -9,4 +9,4 @@ summary: [
 coverImage: "interactive-dashboards.svg"
 index: 0
 ---
-test doc 1
+Many companies have tons of data but no simple way of accessing and visually interpreting it. We work with you to create <b class="text-black">powerful, intuitive, and user-friendly dashboards</b> that highlight all of your important data in one place. These dashboards are fully dynamic: they update automatically as new data comes in and can be filtered to compute different scenarios on the fly. A quick glance at your critical metrics will help you make informed decisions, which <b class="text-black">saves you time and money</b>.

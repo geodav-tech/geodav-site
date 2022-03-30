@@ -7,11 +7,28 @@
             <h1 class="mb-4">{{$page.service.title}}</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
+          <div class="col-md-8">
+            <VueRemarkContent class="pe-4"/>
+            <div class="p-4 inline-callout text-white">
+              <h3 class="text-white">How this helps your business:</h3>
+              <ul class="ms-2" style="font-size: 1.3rem">
+                <li v-for="(text, ind) in $page.service.summary" :key="`${ind}${text}`" v-html="text" />
+              </ul>
+            </div>
+            <h3 class="my-5 pe-4">Client Success With {{$page.service.title}}:</h3>
+          </div>
+          <div class="col-md-4 p-3 side-bar">
+            <span-callout>
+              {{$page.service.tagline}}
+            </span-callout>
+            <div class="section-header-line my-3"></div>
+            <div class="mb-3 bold contact-tagline text-center">
+              Get in touch and let's have a chat about {{$page.service.title.toLowerCase()}}!
+            </div>
+            <contact-form/>
+          </div>
         </div>
-        col 6 span callout with tagline & summary bullet points
-        col 6 image
-        
-        <VueRemarkContent />
+
       </div>
     </section>
   </Layout>
@@ -27,7 +44,11 @@ query Service ($id: ID!) {
 }
 </page-query>
 <script>
+import ContactForm from '../components/ContactForm.vue'
+import SpanCallout from '../components/SpanCallout'
+
 export default {
+	components: { SpanCallout, ContactForm },
   metaInfo() {
     return {
       title: this.$page.service.title
@@ -36,5 +57,21 @@ export default {
 }
 </script>
 <style scoped>
-
+.side-bar {
+  /* this is a lighter geodav-grey */
+  background-color: #7f7f7f14;
+  border-radius: .25rem;
+}
+.contact-tagline {
+  font-size: 1.2rem;
+  color: var(--geodav-red);
+}
+.inline-callout {
+  background-color: var(--geodav-red);
+  border-radius: .25rem;
+  width: fit-content;
+}
+.inline-callout ul {
+  font-size: 1.2rem;
+}
 </style>
