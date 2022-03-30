@@ -339,12 +339,12 @@
                   We're with you every step of the way, even after the project is completed.
                 </li>
                 <li class="wow animate__animated animate__fadeInRight animate-delay-400ms">
-                  We'll check in <b>1, 2, and 3 months</b> after
+                  We'll check in <b class="text-black">1, 2, and 3 months</b> after
                   you've started using your new tools to make sure you're <u>completely satisfied</u> and that everything is working as
                   intended.
                 </li>
                 <li class="wow animate__animated animate__fadeInRight animate-delay-600ms">
-                  Our entire team is based in Western Colorado and we're always just an email or a phone call away!
+                  Our entire team is <b class="text-black">based in Western Colorado</b> and we're always just an email or a phone call away!
                 </li>
               </ul>
             </p>
