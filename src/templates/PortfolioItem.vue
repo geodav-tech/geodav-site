@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.portfolioItem.title }}</h1>
-    <p class="intro">{{ $page.portfolioItem.excerpt }}</p>
+    <p class="intro">{{ $page.portfolioItem }}</p>
     <VueRemarkContent />
   </Layout>
 </template>
@@ -11,7 +11,6 @@
 query PortfolioItem ($id: ID!) {
   portfolioItem(id: $id) {
     title
-    excerpt
   }
 }
 </page-query>

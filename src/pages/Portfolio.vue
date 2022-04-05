@@ -28,7 +28,6 @@ query {
       node {
         id
         title
-        excerpt
       }
     }
   }
