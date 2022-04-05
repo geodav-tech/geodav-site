@@ -8,8 +8,8 @@
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
           <div class="col-md-8">
-            <VueRemarkContent class="pe-4"/>
-            <div class="p-4 inline-callout text-white">
+            <VueRemarkContent class="pe-md-3"/>
+            <div class="p-4 mx-3 inline-callout text-white">
               <h3 class="text-white">How {{$page.service.title}} Can Help Your Business:</h3>
               <ul class="ms-2" style="font-size: 1.3rem">
                 <li v-for="(text, ind) in $page.service.summary" :key="`${ind}${text}`" v-html="text" />
