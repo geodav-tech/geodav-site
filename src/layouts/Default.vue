@@ -79,6 +79,7 @@
             <div class="col-md-6 col-lg-3 pt-3">
               <h3>Services</h3>
               <ul>
+                <!-- these should be pulled from graphql when a dataviz page is made -->
                 <li><g-link to="/services/interactive-dashboards/">Data visualization & analysis</g-link></li>
                 <li><g-link to="/services/interactive-dashboards/">Interactive dashboards</g-link></li>
                 <li><g-link to="/services/web-design-and-development/">Web design & development</g-link></li>
