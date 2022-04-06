@@ -13,4 +13,11 @@ module.exports = function (api) {
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
+
+  api.onCreateNode(options => {
+    // Modify or remove a node before its added to the collection: https://gridsome.org/docs/server-api/#apioncreatenodefn
+    // explicitly set the ID for each node to its filename
+    options.id = options.fileInfo.name
+    return options
+  })
 }
