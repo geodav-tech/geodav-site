@@ -22,7 +22,10 @@ module.exports = {
         typeName: 'PortfolioItem', // Required
         baseDir: './src/portfolio', // Where .md files are located
         template: './src/templates/PortfolioItem.vue', // Optional
-        pathPrefix: '/portfolio'
+        pathPrefix: '/portfolio',
+        refs: {
+          servicesUsed: 'Service' // md files inherit their ids from the filename, so tags must be the exact filename
+        }
       }
     }
   ]
