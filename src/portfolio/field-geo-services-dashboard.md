@@ -1,9 +1,9 @@
 ---
 title: "Spectra Stacker Dashboard"
-tagline: "Lorem Ipsum is simply dummy text."
+tagline: "Web app to process and visualize well log data, allowing real-time collaboration among geolgists at well sites across the nation."
 summary: []
-coverImage: "interactive-dashboards.svg"
-weight: 5  # higher weight means it is more likely to be shown, and will be shown first
+coverImage: "./field-geo-services-dashboard.png"
+weight: 6  # higher weight means it is more likely to be shown, and will be shown first
 servicesUsed: ['interactive-dashboards', 'web-design-and-development']
 ---
 many spectras to stack
