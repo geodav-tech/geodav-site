@@ -75,6 +75,7 @@ export default {
   /* this is a lighter geodav-grey */
   background-color: #7f7f7f14;
   border-radius: .25rem;
+  height: fit-content;
 }
 .contact-tagline {
   font-size: 1.2rem;
