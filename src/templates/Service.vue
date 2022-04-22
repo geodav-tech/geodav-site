@@ -16,6 +16,7 @@
               </ul>
             </div>
             <h3 class="my-5 pe-4">Client Success With {{$page.service.title}}:</h3>
+            {{$page.service.belongsTo.edges}}
           </div>
           <div class="col-md-4 p-3 side-bar">
             <span-callout>
@@ -28,7 +29,6 @@
             <contact-form/>
           </div>
         </div>
-
       </div>
     </section>
   </Layout>
@@ -40,6 +40,20 @@ query Service ($id: ID!) {
     tagline
     summary
     coverImage
+    belongsTo {
+      edges { 
+        node {
+          ...on PortfolioItem {
+            title
+            coverImage     
+            tagline
+            servicesUsed {
+              id
+            }
+          }
+        }
+      }
+    }
   }
 }
 </page-query>
