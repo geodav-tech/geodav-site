@@ -17,21 +17,7 @@
             </div>
             <h3 class="my-5 pe-4">Client Success With {{$page.service.title}}:</h3>
             <div class="row pe-md-3">
-              <div class="col-md-6" v-for="({node: portfolioItem}, ind) in $page.service.belongsTo.edges" :key="`${ind}${portfolioItem.id}`">
-                <div class="card portfolio-item-card mx-md-3 mb-5">
-                  <g-link :to="`/portfolio/${portfolioItem.id}/`">
-                    <div class="text-center">
-                      <g-image loading="lazy" :src="portfolioItem.coverImage" :alt="portfolioItem.title" />
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">{{portfolioItem.title}}</h5>
-                      <p class="card-text">
-                        {{portfolioItem.tagline}}
-                      </p>
-                    </div>
-                  </g-link>
-                </div>
-              </div>
+              <portfolio-item-card v-for="({node}, ind) in $page.service.belongsTo.edges" :key="`${ind}${node.id}`" :portfolioItem="node" />
             </div>
           </div>
           <div class="col-md-4 p-3 side-bar">
@@ -72,11 +58,12 @@ query Service ($id: ID!) {
 }
 </page-query>
 <script>
-import ContactForm from '../components/ContactForm.vue'
+import ContactForm from '../components/ContactForm'
+import PortfolioItemCard from '../components/PortfolioItemCard'
 import SpanCallout from '../components/SpanCallout'
 
 export default {
-	components: { SpanCallout, ContactForm },
+	components: { SpanCallout, ContactForm, PortfolioItemCard },
   metaInfo() {
     return {
       title: this.$page.service.title
@@ -102,17 +89,5 @@ export default {
 }
 .inline-callout ul {
   font-size: 1.2rem;
-}
-.portfolio-item-card.card > a {
-  text-decoration: none;
-  color: var(--geodav-grey);
-}
-.portfolio-item-card {
-  border: none;
-}
-.portfolio-item-card img {
-  width: auto;
-  max-width: 100%;
-  max-height: 250px;
 }
 </style>
