@@ -30,6 +30,7 @@ export default {
 }
 .portfolio-item-card {
   border: none;
+  background-color: transparent;
 }
 .portfolio-item-card img {
   width: auto;

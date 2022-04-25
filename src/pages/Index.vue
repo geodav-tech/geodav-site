@@ -179,52 +179,14 @@
       </div>
     </section>
 
-    <section id="case-studies" class="py-5 px-4" style="background-color: #e9ecef;">
+    <section id="portfolio" class="py-5 px-4" style="background-color: #e9ecef;">
       <div class="container">
         <div class="row text-center">
           <h1 class="mb-4">Client Success Stories</h1>
           <div class="section-header-line"></div>
         </div>
         <div class="row animate__animated wow animate__fadeInRight">
-          <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card h-100 bg-dark text-white">
-              <g-link to="/portfolio/caic-interactive-dashboard/">
-                <g-image loading="lazy" src="../assets/media/images/caic.jpeg" class="card-img" alt="..." />
-                <div class="card-img-overlay d-flex flex-column">
-                  <h5 class="card-title mt-auto">Colorado Avalanche Information Center</h5>
-                  <p class="card-text">
-                    Interactive dashboard to allow avalanche forecasters to easily analyze recent avalanches.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card h-100 bg-dark text-white">
-              <g-link to="/portfolio/intermx-interactive-map/">
-                <g-image loading="lazy" src="../assets/media/images/intermx-pop-data.png" class="card-img" alt="..." />
-                <div class="card-img-overlay d-flex flex-column">
-                  <h5 class="card-title mt-auto">Intermx</h5>
-                  <p class="card-text">
-                    Web app to display Intermx's complex population movement data in easily-digestable, visually-appealing, dynamic maps.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card h-100 bg-dark text-white">
-              <g-link to="/portfolio/fgs-well-log-analysis/">
-                <g-image loading="lazy" src="../assets/media/images/fgs.jpg" class="card-img" alt="..." />
-                <div class="card-img-overlay d-flex flex-column">
-                  <h5 class="card-title mt-auto">Field Geo Services</h5>
-                  <p class="card-text">
-                    Web app to process and visualize well log data, allowing real-time collaboration among geolgists at well sites across the nation.
-                  </p>
-                </div>
-              </g-link>
-            </div>
-          </div>
+          <portfolio-item-card v-for="({node}, ind) in $page.portfolioItems.edges" :key="`${ind}${node.id}`" :portfolioItem="node" class="col-lg-4 col-md-6" />
           <div class="col-12 text-center mb-3">
             <secondary-cta route="/portfolio/" text="See More" style="background-color: var(--geodav-grey);"/>
           </div>
@@ -369,6 +331,20 @@ query {
       }
     }
   }
+  portfolioItems: allPortfolioItem(filter: { id: { in: [
+    "colorado-avalanche-information-center-dashboard",
+    "intermx-web-maps",
+    "field-geo-services-dashboard"
+  ] }}, sortBy: "weight", order: DESC) {
+    edges {
+      node {
+        id
+        title
+        coverImage     
+        tagline
+      }
+    }
+  }
 }
 </page-query>
 
@@ -376,9 +352,10 @@ query {
 import TestimonialCard from '../components/TestimonialCard'
 import SecondaryCta from '~/components/SecondaryCta'
 import SvgIcon from '~/components/SvgIcon'
+import PortfolioItemCard from '../components/PortfolioItemCard'
 
 export default {
-	components: { TestimonialCard, SecondaryCta, SvgIcon },
+	components: { TestimonialCard, SecondaryCta, SvgIcon, PortfolioItemCard },
   metaInfo: {
     title: 'Interactive Dashboards & More'
   }
@@ -443,11 +420,11 @@ export default {
 }
 
 /*what we do section css*/
-#what-we-do .card, #case-studies .card {
+#what-we-do .card {
   border: none;
   transition: all .25s ease;
 }
-#what-we-do .card:hover, #case-studies .card:hover {
+#what-we-do .card:hover {
   box-shadow: 0 12px 70px rgb(119 119 119 / 30%);
   margin-top: -20px;
 }
@@ -492,17 +469,7 @@ export default {
   filter: grayscale(0);
 }
 
-/*case studies section css*/
-#case-studies .card-img-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-}
-#case-studies .card h5 {
-  color: white;
-}
-#case-studies .card > a {
-  text-decoration: none;
-  color: white;
-}
+/*portfolio section css*/
 
 /*testimonials css*/
 @media (min-width: 768px) {
