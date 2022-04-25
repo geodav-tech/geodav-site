@@ -17,16 +17,16 @@
           <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ms-auto heading-font">
               <li class="nav-item">
-                <g-link class="nav-link" to="/about/">About</g-link>
+                <g-link class="nav-link" to="/about/" :class="{selected: $route.path == '/about/'}">About</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" to="/services/">Services</g-link>
+                <g-link class="nav-link" to="/services/" :class="{selected: $route.path == '/services/'}">Services</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" to="/portfolio/">Portfolio</g-link>
+                <g-link class="nav-link" to="/portfolio/" :class="{selected: $route.path == '/portfolio/'}">Portfolio</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" to="/contact/">Contact</g-link>
+                <g-link class="nav-link" to="/contact/" :class="{selected: $route.path == '/contact/'}">Contact</g-link>
               </li>
               <li class="nav-item mt-1">
                 <primary-cta/>
@@ -181,7 +181,11 @@ export default {
 .navbar-toggler {
   border-width: 3px;
 }
-
+#main-nav .navbar-nav li > a.nav-link.selected {
+  text-decoration: underline;
+  text-decoration-color: var(--geodav-red);
+  text-decoration-thickness: 3px;
+}
 /* footer css*/
 #footer-cta h1 {
   margin-bottom: 15px;
