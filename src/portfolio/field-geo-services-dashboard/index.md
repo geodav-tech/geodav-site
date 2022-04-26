@@ -5,5 +5,13 @@ summary: []
 coverImage: "./spectra-stacker-dashboard.png"
 weight: 6  # higher weight means it is more likely to be shown, and will be shown first
 servicesUsed: ['interactive-dashboards', 'web-design-and-development']
+testimonial: {
+  name: "",
+  url: "",
+  title: "",
+  quote: "",
+  starCount: 5,
+  photo: ""
+}
 ---
 many spectras to stack
