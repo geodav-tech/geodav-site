@@ -195,39 +195,14 @@
     </section>
 
     <section id="testimonials" class="pt-4 px-4">
-      <div class="container">
-        <div class="row mt-5 testimonial-row animate__animated wow animate__slideInLeft">
-          <testimonial-card
-            name="Aaron Young"
-            url="https://kaart.com"
-            title="CEO at Kaart"
-            quote="geodav.tech understood our needs quickly and delivered projects on time and within budget. 100% I would work with them again!"
-            :starCount=5
-          >
-            <g-image src="../assets/media/images/aaron.jpg" class="rounded-avatar"/>
-          </testimonial-card>
-        </div>
-        <div class="row mt-5 testimonial-row animate__animated wow animate__slideInRight">
-          <testimonial-card
-            class="offset-md-6"
-            name="Mike Cooperstein"
-            url="https://www.avalanche.state.co.us/"
-            title="Colorado Avalanche Information Center"
-            quote="We worked with geodav to create a dashboard that is used by forecasters and the public to view the distribution of avalanches."
-            :starCount=5
-          >
-            <g-image src="../assets/media/images/coop.jpeg" class="rounded-avatar"/>
-          </testimonial-card>
-        </div>
-        <div class="row mt-5 mb-5 testimonial-row animate__animated wow animate__slideInLeft">
-          <testimonial-card
-            name="Matthew Martimo"
-            url="https://www.intermx.com/"
-            title="Cofounder at Intermx"
-            quote="They dig in, understand the problem, and work with us collaboratively to find and execute a solution. And they are fun to work with! Great people. Super smart. Very patient and competent."
-            :starCount=5
-          >
-            <g-image src="../assets/media/images/matthew.jpeg" class="rounded-avatar"/>
+      <div class="container mb-5">
+        <div
+          v-for="({node: {testimonial}}, ind) in $page.testimonials.edges" :key="`${ind}${testimonial.name}`"
+          class="row mt-5 testimonial-row animate__animated wow"
+          :class="{animate__slideInLeft: ind % 2 === 0, animate__slideInRight: ind % 2 !== 0}"
+        >
+          <testimonial-card v-bind="testimonial" :class="{'offset-md-6': ind % 2 !== 0}">
+            <g-image :src="testimonial.photo" class="rounded-avatar"/>
           </testimonial-card>
         </div>
       </div>
@@ -342,6 +317,24 @@ query {
         title
         coverImage     
         tagline
+      }
+    }
+  }
+  testimonials: allPortfolioItem(filter: { id: { in: [
+    "colorado-avalanche-information-center-dashboard",
+    "intermx-web-maps",
+    "kaart-open-street-map-dashboard"
+  ] }}, sortBy: "weight", order: ASC) {
+    edges {
+      node {
+        testimonial {
+          name
+          url
+          title
+          quote
+          starCount
+          photo
+        }
       }
     }
   }
