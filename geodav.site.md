@@ -1,14 +1,4 @@
 
-(instead of why choose us)
-1, 2, 3 guarantee
-
-<handshake icon> We're with you every step of the way, even after the project is completed.
-<calendar icon> We'll check in 1, 2, and 3 months after you've started using your new tools to make sure you're completely satisfied and that everything is working as intended.
-<map icon> Our entire team is based in Western Colorado and we're always just an email or a phone call away!
-
-
-
-
 you can be the cool kid in the office, using high-tech tools to quickly gain insights that astound your colleagues.
 
 what are you looking for in a software agency website?
@@ -25,8 +15,4 @@ That gets the visitor's attention... You don't look for a coffee shop unless you
 # 5 Yes! I feel good about this... Don't make it hard for me to get in touch with you... What should I do next? Some call it a "Call to Action!"
 
 
-portfolio - /portfolio/
-    caic avalanche explorer - /portfolio/caic-interactive-dashboard/
-    intermx interactive map- /portfolio/intermx-interactive-map/
-    spectra stacker - /portfolio/fgs-well-log-analysis/
-    someday: chronocards, JFS, caic mobile app, kaart stuff, eureka, buck the budget, passur, etc
+portfolio someday: chronocards, JFS, caic mobile app, kaart stuff, eureka, buck the budget, passur, etc
