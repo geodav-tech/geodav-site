@@ -11,7 +11,7 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Service', // Required
-        baseDir: './src/services', // Where .md files are located
+        baseDir: './src/services', // Where folders with .md files are located
         template: './src/templates/Service.vue', // Optional
         pathPrefix: '/services'
       }
@@ -20,11 +20,12 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'PortfolioItem', // Required
-        baseDir: './src/portfolio', // Where .md files are located
+        baseDir: './src/portfolio', // Where folders with .md files are located
         template: './src/templates/PortfolioItem.vue', // Optional
         pathPrefix: '/portfolio',
         refs: {
-          servicesUsed: 'Service' // md files inherit their ids from the filename, so tags must be the exact filename
+          // md files inherit their ids from the folder that contains them, so tags must be the exact name
+          servicesUsed: 'Service' 
         }
       }
     }

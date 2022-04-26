@@ -16,8 +16,8 @@ module.exports = function (api) {
 
   api.onCreateNode(options => {
     // Modify or remove a node before its added to the collection: https://gridsome.org/docs/server-api/#apioncreatenodefn
-    // explicitly set the ID for each node to its filename
-    options.id = options.fileInfo.name
+    // explicitly set the ID for each node to its containing folder
+    options.id = options.fileInfo.directory
     return options
   })
 }
