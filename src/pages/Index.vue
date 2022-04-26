@@ -201,9 +201,7 @@
           class="row mt-5 testimonial-row animate__animated wow"
           :class="{animate__slideInLeft: ind % 2 === 0, animate__slideInRight: ind % 2 !== 0}"
         >
-          <testimonial-card v-bind="testimonial" :class="{'offset-md-6': ind % 2 !== 0}">
-            <g-image :src="testimonial.photo" class="rounded-avatar"/>
-          </testimonial-card>
+          <testimonial-card v-bind="testimonial" :class="{'offset-md-6': ind % 2 !== 0}" />
         </div>
       </div>
     </section>

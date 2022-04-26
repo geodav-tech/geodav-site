@@ -1,8 +1,7 @@
 <template>
   <div class="col-md-6 text-center testimonial-col">
-    <!-- g-image must be loaded via slot due to bug: https://github.com/gridsome/gridsome/issues/292 -->
     <div class="rounded-avatar">
-      <slot></slot>
+      <g-image :src="photo" :alt="`${name}, ${title}`" loading="lazy" />
     </div>
     <h5>{{name}}</h5>
     <b><a :href="url">{{title}}</a></b>
@@ -30,7 +29,8 @@ export default {
     url: String,
     title: String,
     quote: String,
-    starCount: Number
+    starCount: Number,
+    photo: Object
   }
 }
 </script>
