@@ -17,7 +17,7 @@
                   <h6 class="mb-4 mx-4">{{service.node.tagline}}</h6>
                   <div class="row">
                     <div class="col-md-6 mb-4">
-                      <img class="img-fluid" :src="require(`../assets/media/images/${service.node.coverImage}`)" alt="" loading="lazy" />
+                      <img class="img-fluid" :src="require(`../services/${service.node.id}/${service.node.coverImage}`)" alt="" loading="lazy" />
                     </div>
                     <div class="col-md-6 mb-1">
                       <p class="card-text text-start">

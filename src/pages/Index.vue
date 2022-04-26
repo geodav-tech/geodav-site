@@ -45,7 +45,7 @@
               <g-link :to="service.node.path">
                 <div class="card-body text-center">
                   <h4 class="card-title my-4">{{service.node.title}}</h4>
-                  <img class="mb-4 px-3 img-fluid" :src="require(`../assets/media/images/${service.node.coverImage}`)" alt="" loading="lazy" />
+                  <img class="mb-4 px-3 img-fluid" :src="require(`../services/${service.node.id}/${service.node.coverImage}`)" alt="" loading="lazy" />
                   <p class="card-text mb-4">
                     {{service.node.tagline}}
                   </p>
