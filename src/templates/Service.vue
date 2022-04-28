@@ -47,6 +47,7 @@ query Service ($id: ID!) {
         node {
           ...on PortfolioItem {
             id
+            path
             title
             coverImage     
             tagline

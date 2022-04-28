@@ -296,10 +296,10 @@ query {
     edges {
       node {
         id
+        path
         title
         tagline
         coverImage
-        path
         index
       }
     }
@@ -312,6 +312,7 @@ query {
     edges {
       node {
         id
+        path
         title
         coverImage     
         tagline

@@ -50,11 +50,11 @@ query {
     edges {
       node {
         id
+        path
         title
         tagline
         summary
         coverImage
-        path
         index
       }
     }
