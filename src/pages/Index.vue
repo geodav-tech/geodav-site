@@ -186,7 +186,7 @@
           <div class="section-header-line"></div>
         </div>
         <div class="row animate__animated wow animate__fadeInRight">
-          <portfolio-item-card v-for="({node}, ind) in $page.portfolioItems.edges" :key="`${ind}${node.id}`" :portfolioItem="node" class="col-lg-4 col-md-6" />
+          <portfolio-item-card v-for="({node}, ind) in $page.portfolioItems.edges" :key="`${ind}${node.id}`" :portfolioItem="node" colClasses="col-lg-4 col-md-6" />
           <div class="col-12 text-center mb-3">
             <secondary-cta route="/portfolio/" text="See More" style="background-color: var(--geodav-grey);"/>
           </div>
