@@ -17,7 +17,15 @@
               {{tag}}
             </span>
           </div>
-          <portfolio-item-card v-for="{node: portfolioItem} in filteredItems" :key="portfolioItem.id" :portfolioItem="portfolioItem" colClasses="col-lg-4 col-md-6" />
+        </div>
+        <!-- wrap ALL portfolio items in a div so they can all transition together -->
+        <div class="row" :class="{'fade-out': filterIsRunning, 'fade-in': !filterIsRunning}">
+          <portfolio-item-card
+            v-for="{node: portfolioItem} in filteredItems"
+            :key="portfolioItem.id"
+            :portfolioItem="portfolioItem"
+            colClasses="col-lg-4 col-md-6"
+          />
         </div>
       </div>
     </section>
@@ -52,7 +60,8 @@ export default {
   },
   data() {
     return {
-      currentFilter: 'all'
+      currentFilter: 'all',
+      filterIsRunning: false
     }
   },
   computed: {
@@ -73,6 +82,14 @@ export default {
           node.servicesUsed.map(service => service.id).includes(this.currentFilter.replace(/ /g, '-'))
         )
     }
+  },
+  watch: {
+    currentFilter() { // when current filter changes, fade out all portfolio items and fade in with new ones.
+      this.filterIsRunning = true
+      setTimeout(() => {
+        this.filterIsRunning = false
+      }, 250);
+    }
   }
 }
 </script>
@@ -85,5 +102,12 @@ export default {
 .filter.selected {
   background-color: var(--geodav-red);
   color: white;
+}
+.fade-in {
+  transition: all 0.25s ease;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
 }
 </style>
