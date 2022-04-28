@@ -4,17 +4,20 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="mb-4">WIP PORTFOLIO</h1>
+            <h1 class="mb-4">Client Data in Action</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
           </div>
-          <div class="col-md-6">
-            <div v-for="portfolioItem in $page.portfolio.edges" :key="portfolioItem.node.id">
-              {{portfolioItem}}
-            </div>
+          <div class="col-12 mb-5 text-center">
+            <span
+              v-for="tag in serviceTags" :key="tag"
+              class="badge filter m-2"
+              :class="{selected: tag === currentFilter}"
+              @click="currentFilter = tag"
+            >
+              {{tag}}
+            </span>
           </div>
-          <div class="col-md-6 d-none d-md-block">
-            <img class="p-2 img-fluid" src="../assets/media/images/about-geodav-team.svg" alt="" loading="lazy" />
-          </div>
+          <portfolio-item-card v-for="{node: portfolioItem} in filteredItems" :key="portfolioItem.id" :portfolioItem="portfolioItem" colClasses="col-lg-4 col-md-6" />
         </div>
       </div>
     </section>
@@ -23,11 +26,17 @@
 
 <page-query>
 query {
-  portfolio: allPortfolioItem {
+  portfolioItems: allPortfolioItem(sortBy: "weight", order: DESC) {
     edges {
       node {
         id
+        path
         title
+        coverImage
+        tagline
+        servicesUsed(sortBy: "index", order: ASC) {
+          id
+        }
       }
     }
   }
@@ -35,24 +44,46 @@ query {
 </page-query>
 
 <script>
+import PortfolioItemCard from '../components/PortfolioItemCard'
 export default {
+	components: { PortfolioItemCard },
   metaInfo: {
     title: 'Portfolio'
+  },
+  data() {
+    return {
+      currentFilter: 'all'
+    }
+  },
+  computed: {
+    serviceTags() {
+      // gets an array of unique service tags from the portfolio items loaded by graphql, plus an option for "all"
+      let tags = ['all'].concat(Array.from(
+        new Set(this.$page.portfolioItems.edges.map(({node}) => node.servicesUsed.map(service => service.id)).flat())
+      ))
+
+      // remove extra hyphens and send it out the door.
+      return tags.map(tag => tag.replace(/-/g, ' '))
+    },
+    filteredItems() { // filter to return just the portfolio items that make use of the selected service
+      if (this.currentFilter === 'all') {
+        return this.$page.portfolioItems.edges
+      }
+        return this.$page.portfolioItems.edges.filter(({node}) => 
+          node.servicesUsed.map(service => service.id).includes(this.currentFilter.replace(/ /g, '-'))
+        )
+    }
   }
 }
 </script>
 <style scoped>
-.location-box {
+.filter {
+  border: 2px solid var(--geodav-red);
+  color: black;
+  cursor: pointer;
+}
+.filter.selected {
   background-color: var(--geodav-red);
   color: white;
-  width: 75%;
-}
-.location-box > h3 {
-  color: white;
-}
-@media screen and (max-width: 991px) {
-  .location-box {
-    width: 100%;
-  }
 }
 </style>
