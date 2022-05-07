@@ -14,5 +14,6 @@ testimonial: {
   starCount: 5,
   photo: "./aaron.jpg"
 }
+additionalImages: []
 ---
 many data points

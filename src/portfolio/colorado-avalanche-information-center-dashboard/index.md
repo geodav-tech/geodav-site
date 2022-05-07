@@ -17,5 +17,9 @@ testimonial: {
   starCount: 5,
   photo: "./coop.jpeg"
 }
+additionalImages: [
+  './screenshot1.png',
+  './screenshot2.png',
+]
 ---
 many avalanches

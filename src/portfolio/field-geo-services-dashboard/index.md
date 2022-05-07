@@ -14,5 +14,6 @@ testimonial: {
   starCount: 5,
   photo: ""
 }
+additionalImages: []
 ---
 many spectras to stack

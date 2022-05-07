@@ -14,5 +14,6 @@ testimonial: {
   starCount: 5,
   photo: "./matthew.jpeg"
 }
+additionalImages: []
 ---
 many oohs
