@@ -7,7 +7,7 @@
             <h1 class="mb-4" style="text-wrap: balance;">{{$page.portfolioItem.title}}</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
             <div class="row">
-              <div class="col-md-6 mb-4 text-center">
+              <div class="col-lg-6 mb-4 text-center">
                 <g-image loading="lazy" class="img-fluid" :src="$page.portfolioItem.coverImage" :alt="$page.portfolioItem.title" />
                 <primary-cta
                   v-if="$page.portfolioItem.demoUrl"
@@ -17,7 +17,7 @@
                   target="_blank"
                 />
               </div>
-              <div class="col-md-6 mb-4 pe-md-3">
+              <div class="col-lg-6 mb-4 pe-md-3">
                 <h4>{{$page.portfolioItem.tagline}}</h4>
                 <ul class="ms-2" style="font-size: 1.3rem">
                   <li
