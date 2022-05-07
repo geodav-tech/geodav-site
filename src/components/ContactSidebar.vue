@@ -1,13 +1,16 @@
 <template>
-  <div class="p-3 side-bar" :class="colClasses">
-    <span-callout>
-      {{spanCallout}}
-    </span-callout>
-    <div class="section-header-line my-3"></div>
-    <div class="mb-3 bold contact-tagline text-center">
-      {{contactTagline}}
+  <div :class="colClasses" class="p-0">
+    <slot/>
+    <div class="p-3 side-bar">
+      <span-callout>
+        {{spanCallout}}
+      </span-callout>
+      <div class="section-header-line my-3"></div>
+      <div class="mb-3 bold contact-tagline text-center">
+        {{contactTagline}}
+      </div>
+      <contact-form/>
     </div>
-    <contact-form/>
   </div>
 </template>
 <script>
