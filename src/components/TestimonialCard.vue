@@ -6,8 +6,8 @@
     <h5>{{name}}</h5>
     <b><a :href="url">{{title}}</a></b>
     <br>
-    <span style="display: inline-flex;">
-      <svg-icon icon="@mdiFormatQuoteOpen" class="mdi-format-quote-open" style="min-width: 24px;"/>
+    <span class="d-flex mw-100">
+      <svg-icon icon="@mdiFormatQuoteOpen" class="mdi-format-quote-open h-auto" style="min-width: 24px;"/>
       <p>
         {{quote}}
       </p>

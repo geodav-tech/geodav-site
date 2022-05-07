@@ -33,7 +33,6 @@
                   <g-image loading="lazy" class="img-fluid img-thumbnail" :src="image" alt="$page.portfolioItem.title" />
                 </div>
               </div>
-              <!-- <testimonial-card v-bind="$page.portfolioItem.testimonial"/> -->
             </div>
             <VueRemarkContent class="pe-md-3"/>
           </div>
