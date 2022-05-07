@@ -40,7 +40,13 @@
           <contact-sidebar
             spanCallout="Can we build something like this to improve your workflows?"
             contactTagline="Get in touch and let's have a chat about how we can help!"
-          />
+          >
+            <testimonial-card
+              v-bind="$page.portfolioItem.testimonial"
+              class="w-100 p-3 pb-4 mb-4 side-bar-top"
+              v-if="$page.portfolioItem.testimonial"
+            />
+          </contact-sidebar>
         </div>
       </div>
     </section>

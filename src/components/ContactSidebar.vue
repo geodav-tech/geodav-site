@@ -1,6 +1,6 @@
 <template>
   <div :class="colClasses" class="p-0">
-    <slot/>
+    <slot />
     <div class="p-3 side-bar">
       <span-callout>
         {{spanCallout}}
@@ -39,5 +39,10 @@ export default {
 .contact-tagline {
   font-size: 1.2rem;
   color: var(--geodav-red);
+}
+
+.side-bar-top {
+  border: var(--geodav-red) 1px solid;
+  border-radius: .25rem;
 }
 </style>
