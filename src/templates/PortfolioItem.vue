@@ -29,8 +29,8 @@
                 </ul>
               </div>
               <div class="row d-flex justify-content-center mb-4 mx-auto pe-md-3">
-                  <g-image loading="lazy" class="img-fluid img-thumbnail" :src="image" :alt="$page.portfolioItem.title" />
                 <div class="col-md-4 p-2" v-for="(image, index) in $page.portfolioItem.additionalImages" :key="index + image.src">
+                  <expandable-image loading="lazy" class="img-fluid img-thumbnail" :src="image" :alt="$page.portfolioItem.title" />
                 </div>
               </div>
             </div>
@@ -78,11 +78,12 @@ query PortfolioItem ($id: ID!) {
 </page-query>
 <script>
 import ContactSidebar from '../components/ContactSidebar'
+import ExpandableImage from '../components/ExpandableImage'
 import PrimaryCta from '../components/PrimaryCta'
 import TestimonialCard from '../components/TestimonialCard'
 
 export default {
-	components: { ContactSidebar, PrimaryCta, TestimonialCard },
+	components: { ContactSidebar, PrimaryCta, TestimonialCard, ExpandableImage },
   metaInfo() {
     return {
       title: this.$page.portfolioItem.title
