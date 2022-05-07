@@ -28,7 +28,7 @@
                   />
                 </ul>
               </div>
-              <div class="row d-flex justify-content-center">
+              <div class="row d-flex justify-content-center mb-4">
                 <div class="col-md-4 p-2" v-for="image in $page.portfolioItem.additionalImages" :key="image.src">
                   <g-image loading="lazy" class="img-fluid img-thumbnail" :src="image" alt="$page.portfolioItem.title" />
                 </div>

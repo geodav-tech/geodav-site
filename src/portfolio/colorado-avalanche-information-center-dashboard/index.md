@@ -19,7 +19,6 @@ testimonial: {
 }
 additionalImages: [
   './screenshot1.png',
-  './screenshot2.png',
+  './screenshot2.png'
 ]
 ---
-many avalanches
