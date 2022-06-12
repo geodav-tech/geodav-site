@@ -1,5 +1,5 @@
 <template>
-  <div :class="colClasses || 'col-md-6'">
+  <div :class="colClasses">
     <div class="card portfolio-item-card mx-md-3 mb-5">
       <g-link :to="portfolioItem.path">
         <div class="text-center img-container d-flex">
@@ -20,7 +20,10 @@ export default {
   name: 'PortfolioItemCard',
   props: {
     portfolioItem: Object,
-    colClasses: String // bootstrap col sizes; get plugged in as classnames
+    colClasses: { // bootstrap col sizes; get plugged in as classnames
+      type: String,
+      default: 'col-md-6'
+    }
   }
 }
 </script>
