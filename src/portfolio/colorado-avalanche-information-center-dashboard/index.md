@@ -18,7 +18,7 @@ testimonial: {
   photo: "./coop.jpeg"
 }
 additionalImages: [
-  './screenshot1.png',
-  './screenshot2.png'
+  './interactive-dashboard-with-filtering-date-selection.png',
+  './interactive-dashboard-with-filtering-lasso-points.png'
 ]
 ---
