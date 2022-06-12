@@ -322,7 +322,7 @@ query {
   testimonials: allPortfolioItem(filter: { id: { in: [
     "colorado-avalanche-information-center-dashboard",
     "intermx-web-maps",
-    "kaart-open-street-map-dashboard"
+    "openstreetmap-dashboard"
   ] }}, sortBy: "weight", order: ASC) {
     edges {
       node {
