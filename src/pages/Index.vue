@@ -307,7 +307,7 @@ query {
   portfolioItems: allPortfolioItem(filter: { id: { in: [
     "colorado-avalanche-information-center-dashboard",
     "intermx-web-maps",
-    "field-geo-services-dashboard"
+    "oil-and-gas-well-log-dashboard"
   ] }}, sortBy: "weight", order: DESC) {
     edges {
       node {
