@@ -9,14 +9,14 @@ coverImage: "./oil-and-gas-well-log-dashboard.png"
 demoUrl: ''
 weight: 6  # higher weight means it is more likely to be shown, and will be shown first
 servicesUsed: ['interactive-dashboards', 'web-design-and-development']
-testimonial: {
-  name: "",
-  url: "",
-  title: "",
-  quote: "",
-  starCount: 5,
-  photo: ""
-}
+# testimonial: {
+#   name: "",
+#   url: "",
+#   title: "",
+#   quote: "",
+#   starCount: 5,
+#   photo: ""
+# }
 additionalImages: [
   './oil-and-gas-interactive-dashboard-from-well-logs.png',
   './oil-and-gas-interactive-dashboard-select-series.png'
