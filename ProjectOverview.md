@@ -30,14 +30,6 @@ JFS is a local accounting firm based in Grand Junction who service a variety of 
 - 0% crash rate in ??? monthly users
 - ??? avalanches reported from app?!?!
 
-# CAIC - web
-- provided with a quick prototype to iterate with the client
-- Integrate with multiple data sources to see any observed avalanche from disparate sources all shown in one place
-- Discretely log in to access hidden features only available to avalanche reporters
-- Crossfilterability that allows more flexability to the users and the reporters when looking for specific data
-- Standalone app created to integrate with their existing site and themes
-
-
 # EUREKA!
 - A full stack solution to all their needs
 	- easier integration for client content (wagtail)
