@@ -15,4 +15,3 @@ That gets the visitor's attention... You don't look for a coffee shop unless you
 # 5 Yes! I feel good about this... Don't make it hard for me to get in touch with you... What should I do next? Some call it a "Call to Action!"
 
 
-portfolio someday: chronocards, JFS, caic mobile app, kaart stuff, eureka, buck the budget, passur, etc
