@@ -1,14 +1,3 @@
-# Intermx
-Intermx is a widespread data provider working to provide predictive data dashboards that will drive sales and insights for advertisers and the tourism industry. They have hundreds of thousands of data points and demographics and we provide them with the tools to use it effectively, building them various reports and data dashboards that drives their data. Their assets and needs are constantly growing and changing and we work closely their other development teams and designers, dreaming up new features and iterating upon those with Intermx.
-
-- Features written to integrate with their existing codebase
-	- Designs were shared from their existing ui and the application was written in the same language and version as other existing code.
-	- Shared component library has been developed between our two teams to share code and features more easily.
-- Custom reports and pages, tailored for each client's needs
-	- url sharing capabilities and custom pages provide Intermx everything they need to provide their clients with tailored reports for any occassion
-- Daily and hourly breakdowns of travel data by neighborhood, zip code, dma, cbsa, or state.
-- Billboard and point of interest data for thousands of points with viewshed and data collection points all shown on a map.
-
 # Spectra Stacker
 [spectrastacker client name] is a [job title] who deals with a lot of data about the contents of the ground and air when drilling for oil and natural gas. Spectra Stacker is a tool created for [clientname] that allows their teams to quickly input and analyze this data, taking raw data and transforming it into collaborative, editable charts and annotations.
 

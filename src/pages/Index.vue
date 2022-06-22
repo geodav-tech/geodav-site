@@ -306,7 +306,7 @@ query {
   }
   portfolioItems: allPortfolioItem(filter: { id: { in: [
     "colorado-avalanche-information-center-dashboard",
-    "intermx-web-maps",
+    "population-movement-web-maps",
     "oil-and-gas-well-log-dashboard"
   ] }}, sortBy: "weight", order: DESC) {
     edges {
@@ -321,7 +321,7 @@ query {
   }
   testimonials: allPortfolioItem(filter: { id: { in: [
     "colorado-avalanche-information-center-dashboard",
-    "intermx-web-maps",
+    "population-movement-web-maps",
     "openstreetmap-dashboard"
   ] }}, sortBy: "weight", order: ASC) {
     edges {
