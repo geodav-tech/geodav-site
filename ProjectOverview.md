@@ -1,17 +1,3 @@
-# Spectra Stacker
-[spectrastacker client name] is a [job title] who deals with a lot of data about the contents of the ground and air when drilling for oil and natural gas. Spectra Stacker is a tool created for [clientname] that allows their teams to quickly input and analyze this data, taking raw data and transforming it into collaborative, editable charts and annotations.
-
-- Import LAS data and plot it in configurable charts
-	- quickly import data and show it in a meaningful way to your team.
-	- the charts are completely customizable, we'll provide you with defaults, but you can decide what's important to you.
-- manage multiple projects with read/write access
-	- control who can make changes to your data and who can just look.
-	- invite multiple collaborators on projects
-	- annotate charts with collaborators in realtime
-- configurable import and export of data
-	- export to readable LAS or full LAS data
-	- export charts to PDF to share with ease
-
 # XCF
 JFS is a local accounting firm based in Grand Junction who service a variety of clients across the valley, providing financial insights and [] to businesses small and large. The XtremeCashFlow tool was designed by JFS for JFS, tailored to their needs every step of the way. This tool allows JFS to import financial data from various sources such as Quickbooks and Xero to create predictions and strategies for your business moving forward.
 
