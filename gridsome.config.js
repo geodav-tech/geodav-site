@@ -13,6 +13,10 @@ module.exports = {
       options: {}
     },
     {
+      use: 'gridsome-plugin-robots',
+      options: {}
+    },
+    {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Service', // Required
