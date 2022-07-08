@@ -17,6 +17,12 @@ module.exports = {
       options: {}
     },
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-139335185-1'
+      }
+    },
+    {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Service', // Required
