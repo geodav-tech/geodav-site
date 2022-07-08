@@ -6,7 +6,12 @@
 
 module.exports = {
   siteName: 'geodav.tech',
+  siteUrl: 'https://geodav.tech',
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {}
+    },
     {
       use: '@gridsome/vue-remark',
       options: {
