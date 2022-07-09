@@ -1,5 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
+import config from '../gridsome.config'
 
 // our two fonts and CSS deps
 import '@fontsource/montserrat/700.css'
@@ -61,4 +62,10 @@ export default function (Vue, { router, head, isClient }) {
     src: 'https://js.hs-scripts.com/5758326.js',
     body: true
   })
+
+  // add default meta tags; can be manually overwritten at each page using the key.
+  head.meta.push(
+    {key: 'og:site_name', property: 'og:site_name', content: config.siteName},
+    {key: 'og:type', property: 'og:type', content: 'website'}
+  )
 }

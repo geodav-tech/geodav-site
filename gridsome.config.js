@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'geodav.tech',
-  siteUrl: 'https://geodav.tech',
+  siteUrl: 'https://geodav.tech', // i think this needs to NOT end in a slash.
   plugins: [
     {
       use: '@gridsome/plugin-sitemap',

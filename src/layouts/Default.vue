@@ -101,7 +101,7 @@
 <static-query>
 query {
   metadata {
-    siteName
+    siteUrl
   }
 }
 </static-query>
@@ -113,6 +113,18 @@ export default {
       type: Boolean,
       required: false,
       default: true
+    }
+  },
+  metaInfo() {
+    return {
+      // add og:url on the fly for each route using this layour, can override manually in each page with key.
+      meta: [
+        {
+          key: 'og:url',
+          name: 'og:url',
+          content: this.$static.metadata.siteUrl + this.$route.path
+        }
+      ]
     }
   },
   data: () => ({
