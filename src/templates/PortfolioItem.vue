@@ -52,7 +52,14 @@
   </Layout>
 </template>
 
-<!-- Front-matter fields can be queried from GraphQL layer -->
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <page-query>
 query PortfolioItem ($id: ID!) {
   portfolioItem(id: $id) {
@@ -92,6 +99,39 @@ export default {
         {property: 'og:title', content: `Portfolio: ${this.$page.portfolioItem.title}`},
         {property: 'og:image', content: this.$page.portfolioItem.coverImage.src},
         {property: 'og:description', content: this.$page.portfolioItem.tagline}
+      ],
+      //Some ld+json tags
+      script: [
+        {
+          type: 'application/ld+json',
+          json: {
+            '@context': 'http://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'geodav.tech',
+            image: this.$static.metadata.siteUrl + require('../assets/media/logos/ours/square-logo-180x180.png'),
+            email: 'hello@geodav.tech',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Grand Junction',
+              addressRegion: 'Colorado',
+              postalCode: '81501',
+              addressCountry: 'US'
+            },
+            review: {
+              '@type': 'Review',
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: this.$page.portfolioItem.testimonial.starCount + '', // coax to string. not sure if needed.
+                bestRating: '5'
+              },
+              author: {
+                '@type': 'Person',
+                name: this.$page.portfolioItem.testimonial.name
+              },
+              reviewBody: this.$page.portfolioItem.testimonial.quote
+            }
+          }
+        }
       ]
     }
   }
