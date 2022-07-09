@@ -29,9 +29,9 @@
                   </div>
                   <div class="row mt-auto">
                     <div class="col-12 mb-2">
-                      <g-link :to="service.node.path" class="read-more-link">
+                      <span :to="service.node.path" class="read-more-link">
                         Read More
-                      </g-link>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -80,5 +80,10 @@ export default {
 .read-more-link {
   font-family: 'Montserrat';
   font-size: 1.2rem;
+  color: var(--geodav-red);
+  text-decoration: underline;
+}
+.read-more-link:hover {
+  color: var(--geodav-grey);
 }
 </style>
