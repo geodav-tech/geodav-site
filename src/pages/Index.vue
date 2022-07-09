@@ -416,6 +416,11 @@ export default {
   font-size: 50px;
   color: white;
 }
+@media screen and (max-width: 380px) {
+  #fullwidth-video .video-header {
+    font-size: 45px;
+  }
+}
 #fullwidth-video .video-subheader {
   text-transform: uppercase;
   line-height: 22px;
