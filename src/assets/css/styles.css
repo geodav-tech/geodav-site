@@ -16,6 +16,16 @@ body {
   font-weight: 400;
   line-height: 30px;
 }
+/*
+  prevent weird bug caused by animations on mobile where the right side would be scrollable into blank space.
+  scroll behavior also prevents that weird scroll thing where it would slowly scroll to the top when changing pages.
+*/
+:root,
+body {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .section-header-line {
   max-width: 100%;
   width: 80px;
