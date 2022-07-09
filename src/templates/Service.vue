@@ -56,9 +56,21 @@ import PortfolioItemCard from '../components/PortfolioItemCard'
 
 export default {
 	components: { PortfolioItemCard, ContactSidebar },
+  methods: {
+    getRandomPortfolioItem() {
+      return this.$page.service.belongsTo.edges[Math.floor(Math.random() * this.$page.service.belongsTo.edges.length)] || {}
+    }
+  },
   metaInfo() {
     return {
-      title: this.$page.service.title
+      title: this.$page.service.title,
+      meta: [
+        // og tags
+        {property: 'og:title', content: this.$page.service.title},
+        // since these use SVGs as the cover image and og doesn't support that, choose a random related portfolio item and use its image
+        {property: 'og:image', content: this.getRandomPortfolioItem().node?.coverImage?.src || ''},
+        {property: 'og:description', content: this.$page.service.tagline}
+      ]
     }
   }
 }

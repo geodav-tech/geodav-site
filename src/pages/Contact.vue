@@ -24,8 +24,16 @@
 import ContactForm from '../components/ContactForm'
 export default {
 	components: { ContactForm },
-  metaInfo: {
-    title: 'Contact'
+  metaInfo() {
+    return {
+      title: 'Contact',
+      meta: [
+        // og tags
+        {property: 'og:title', content: 'How Can We Help You? Let’s Talk!'},
+        {property: 'og:image', content: require('../assets/media/images/productivity.jpg')},
+        {property: 'og:description', content: 'We’re looking forward to chatting about how we can enrich your business and make your life easier!'}
+      ]
+    }
   },
   data: () => ({
     hasBeenSubmitted: false

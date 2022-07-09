@@ -45,8 +45,16 @@ import SpanCallout from '~/components/SpanCallout'
 
 export default {
   components: { SpanCallout },
-  metaInfo: {
-    title: 'About'
+  metaInfo() {
+    return {
+      title: 'About',
+      meta: [
+        // og tags
+        {property: 'og:title', content: 'About geodav.tech: We Bring Clarity to Your Data'},
+        {property: 'og:image', content: require('../assets/media/images/laptop.png')},
+        {property: 'og:description', content: 'We are experts at web development, data analysis, and building powerful, intuitive dashboards.'}
+      ]
+    }
   }
 }
 </script>

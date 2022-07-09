@@ -64,8 +64,16 @@ query {
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Services'
+  metaInfo() {
+    return {
+      title: 'Services',
+      meta: [
+        // og tags
+        {property: 'og:title', content: 'Software Development Services Designed to Support You'},
+        {property: 'og:image', content: require('../assets/media/images/laptop.png')},
+        {property: 'og:description', content: 'We offer software development services to help you make faster and more informed decisions.'}
+      ]
+    }
   }
 }
 </script>

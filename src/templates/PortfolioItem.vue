@@ -86,7 +86,13 @@ export default {
 	components: { ContactSidebar, PrimaryCta, TestimonialCard, ExpandableImage },
   metaInfo() {
     return {
-      title: this.$page.portfolioItem.title
+      title: this.$page.portfolioItem.title,
+      meta: [
+        // og tags
+        {property: 'og:title', content: `Portfolio: ${this.$page.portfolioItem.title}`},
+        {property: 'og:image', content: this.$page.portfolioItem.coverImage.src},
+        {property: 'og:description', content: this.$page.portfolioItem.tagline}
+      ]
     }
   }
 }
