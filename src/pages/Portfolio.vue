@@ -62,7 +62,8 @@ export default {
         // og tags
         {property: 'og:title', content: 'Check Out Some of Our Past Work!'},
         {property: 'og:image', content: require('../portfolio/colorado-avalanche-information-center-dashboard/caic-avalanche-explorer.png')},
-        {property: 'og:description', content: 'We have more than 30 satisfied clients and over 10 years of experience!'}
+        {property: 'og:description', content: 'We have more than 30 satisfied clients and over 10 years of experience!'},
+        {name: 'description', content: 'We have more than 30 satisfied clients and over 10 years of experience!'}
       ]
     }
   },

@@ -356,7 +356,8 @@ export default {
         // og tags
         {property: 'og:title', content: 'geodav.tech: Interactive Dashboards & More'},
         {property: 'og:image', content: require('../assets/media/images/productivity.jpg')},
-        {property: 'og:description', content: 'geodav.tech is a software development agency specialized in creating web pages and mobile applications to help you make faster and more informed decisions.'}
+        {property: 'og:description', content: 'geodav.tech is a software development agency specialized in creating web pages and mobile applications to help you make faster and more informed decisions.'},
+        {name: 'description', content: 'geodav.tech is a software development agency specialized in creating web pages and mobile applications to help you make faster and more informed decisions.'}
       ]
     }
   },

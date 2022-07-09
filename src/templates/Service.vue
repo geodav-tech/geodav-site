@@ -69,7 +69,8 @@ export default {
         {property: 'og:title', content: this.$page.service.title},
         // since these use SVGs as the cover image and og doesn't support that, choose a random related portfolio item and use its image
         {property: 'og:image', content: this.getRandomPortfolioItem().node?.coverImage?.src || ''},
-        {property: 'og:description', content: this.$page.service.tagline}
+        {property: 'og:description', content: this.$page.service.tagline},
+        {name: 'description', content: this.$page.service.tagline}
       ]
     }
   }

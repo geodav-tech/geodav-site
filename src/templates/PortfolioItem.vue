@@ -98,7 +98,8 @@ export default {
         // og tags
         {property: 'og:title', content: `Portfolio: ${this.$page.portfolioItem.title}`},
         {property: 'og:image', content: this.$page.portfolioItem.coverImage.src},
-        {property: 'og:description', content: this.$page.portfolioItem.tagline}
+        {property: 'og:description', content: this.$page.portfolioItem.tagline},
+        {name: 'description', content: this.$page.portfolioItem.tagline}
       ],
       //Some ld+json tags
       script: [

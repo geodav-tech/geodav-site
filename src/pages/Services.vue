@@ -71,7 +71,8 @@ export default {
         // og tags
         {property: 'og:title', content: 'Software Development Services Designed to Support You'},
         {property: 'og:image', content: require('../assets/media/images/laptop.png')},
-        {property: 'og:description', content: 'We offer software development services to help you make faster and more informed decisions.'}
+        {property: 'og:description', content: 'We offer software development services to help you make faster and more informed decisions.'},
+        {name: 'description', content: 'We offer software development services to help you make faster and more informed decisions.'}
       ]
     }
   }
