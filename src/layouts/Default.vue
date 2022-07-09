@@ -9,7 +9,7 @@
       <nav id="navbar-top" class="navbar navbar-expand-lg navbar-dark" :class="{'permanent-dark-top': showNavbarBackground}">
         <div class="container">
           <g-link class="navbar-brand" to="/">
-            <img src="../assets/media/logos/ours/logo_with_name_horizontal.svg" class="logo" alt="" loading="lazy" style="height: 58px" />
+            <img src="../assets/media/logos/ours/logo_with_name_horizontal.svg" class="logo" alt="" loading="lazy" />
           </g-link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -171,6 +171,14 @@ export default {
 }
 #navbar-top {
   z-index: 3;
+}
+#navbar-top img.logo {
+  height: 58px;
+}
+@media screen and (max-width: 380px) {
+  #navbar-top img.logo {
+    height: 45px;
+  }
 }
 #navbar-top.fixed-top, #navbar-top.togglable-dark-top, #navbar-top.permanent-dark-top  {
   background: rgba(41, 55, 66, 0.8);
