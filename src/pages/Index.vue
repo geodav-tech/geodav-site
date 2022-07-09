@@ -6,8 +6,9 @@
       <div class="overlay"></div>
 
       <!-- The HTML5 video element that will create the background video on the section -->
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="../assets/media/videos/productivity.mp4" type="video/mp4">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="../assets/media/images/productivity.jpg">
+        <!-- don't display video on small screens. note this is the physical size of the screen, not viewport -->
+        <source v-if="screenWidth > 767" src="../assets/media/videos/productivity.mp4" type="video/mp4">
       </video>
 
       <!-- The section content -->
@@ -350,6 +351,15 @@ export default {
 	components: { TestimonialCard, SecondaryCta, SvgIcon, PortfolioItemCard },
   metaInfo: {
     title: 'Interactive Dashboards & More'
+  },
+  data() {
+    return {
+      screenWidth: 0
+    }
+  },
+  mounted() {
+    // have to do this here because a call to `window` will break server gridsome during build since there's no window, but mounted doesn't get called on the server.
+    this.screenWidth = window.screen.width
   }
 }
 </script>
