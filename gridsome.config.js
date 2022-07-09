@@ -24,7 +24,9 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-precompress',
-      options: {} // By default, only html, .css and .js get compressed.
+      options: {
+        extensions: ['css', 'html', 'js', 'svg', 'json']
+      }
     },
     {
       use: '@gridsome/vue-remark',
