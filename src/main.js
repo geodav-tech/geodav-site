@@ -66,6 +66,9 @@ export default function (Vue, { router, head, isClient }) {
   // add default meta tags; can be manually overwritten at each page using the key.
   head.meta.push(
     {key: 'og:site_name', property: 'og:site_name', content: config.siteName},
-    {key: 'og:type', property: 'og:type', content: 'website'}
+    {key: 'og:type', property: 'og:type', content: 'website'},
+    {key: 'twitter:card', name: 'twitter:card', content: 'summary_large_image'},
+    {key: 'twitter:site', name: 'twitter:site', content: '@geodav_tech'},
+    {key: 'twitter:creator', name: 'twitter:creator', content: '@mikedavl'}
   )
 }
