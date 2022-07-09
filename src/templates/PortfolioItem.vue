@@ -102,7 +102,8 @@ export default {
       ],
       //Some ld+json tags
       script: [
-        {
+        // getting disgustingly react-y here... if there's a portfolio item, include this object. if not, send an empty obj.
+        this.$page.portfolioItem.testimonial ? {
           type: 'application/ld+json',
           json: {
             '@context': 'http://schema.org',
@@ -121,17 +122,17 @@ export default {
               '@type': 'Review',
               reviewRating: {
                 '@type': 'Rating',
-                ratingValue: this.$page.portfolioItem.testimonial.starCount + '', // coax to string. not sure if needed.
+                ratingValue: this.$page.portfolioItem.testimonial?.starCount + '', // coax to string. not sure if needed.
                 bestRating: '5'
               },
               author: {
                 '@type': 'Person',
-                name: this.$page.portfolioItem.testimonial.name
+                name: this.$page.portfolioItem.testimonial?.name
               },
-              reviewBody: this.$page.portfolioItem.testimonial.quote
+              reviewBody: this.$page.portfolioItem.testimonial?.quote
             }
           }
-        }
+        } : {}
       ]
     }
   }
