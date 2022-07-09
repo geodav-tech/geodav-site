@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 d-none d-md-block">
-            <g-image id="laptop-img" class="wow animate__animated animate__fadeInLeft" src="../assets/media/images/laptop.png" alt="" loading="lazy" />
+            <g-image id="laptop-img" class="wow animate__animated animate__fadeInLeft" src="../assets/media/images/laptop.png" alt="Laptop running ChronoCards ArcGIS Pro workflow documentation software." loading="lazy" />
           </div>
           <div class="col-md-6 px-5">
             <div class="wow animate__animated animate__fadeInRight animate-delay-200ms">
@@ -268,7 +268,7 @@
               <h1 class="mb-4">1, 2, 3 Guarantee</h1>
               <div class="section-header-line" style="margin-left: 0;"></div>
             </div>
-            <p>
+            <div>
               <ul class="guarantee-items">
                 <li class="wow animate__animated animate__fadeInRight animate-delay-200ms">
                   We're with you every step of the way, even after the project is completed.
@@ -282,7 +282,7 @@
                   Our entire team is <b class="text-black">based in Western Colorado</b> and we're always just an email or a phone call away!
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>

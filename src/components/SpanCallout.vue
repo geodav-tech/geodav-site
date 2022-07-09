@@ -1,10 +1,10 @@
 <template>
-  <span class="w-100" style="display: inline-flex;">
+  <div class="w-100" style="display: inline-flex;">
     <svg-icon :icon="icon" class="span-callout-icon" style="min-width: 8%; height: auto;"/>
     <h3 class="mb-0">
       <slot/>
     </h3>
-  </span>
+  </div>
 </template>
 <script>
 import SvgIcon from '~/components/SvgIcon'

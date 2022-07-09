@@ -55,7 +55,6 @@ export default function (Vue, { router, head, isClient }) {
 
   // add hubspot tracking script
   head.script.push({
-    type: 'text/javascript',
     id: 'hs-script-loader',
     async: true,
     defer: true,

@@ -6,12 +6,12 @@
     <h5>{{name}}</h5>
     <b><a :href="url">{{title}}</a></b>
     <br>
-    <span class="d-flex mw-100">
+    <div class="d-flex mw-100">
       <svg-icon icon="@mdiFormatQuoteOpen" class="mdi-format-quote-open h-auto" style="min-width: 24px;"/>
       <p>
         {{quote}}
       </p>
-    </span>
+    </div>
     <span v-for="(e, i) in starCount" :key="i">
       <svg-icon icon="@mdiStar" class="mdi-star"/>
     </span>

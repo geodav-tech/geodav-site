@@ -20,16 +20,16 @@
                       <img class="img-fluid" :src="require(`../services/${service.node.id}/${service.node.coverImage}`)" alt="" loading="lazy" />
                     </div>
                     <div class="col-md-6 mb-1">
-                      <p class="card-text text-start">
+                      <div class="card-text text-start">
                         <ul>
                           <li v-for="(text, ind) in service.node.summary" :key="`${ind}${text}`" v-html="text" />
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div class="row mt-auto">
                     <div class="col-12 mb-2">
-                      <span :to="service.node.path" class="read-more-link">
+                      <span class="read-more-link">
                         Read More
                       </span>
                     </div>

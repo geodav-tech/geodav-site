@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h1 class="mb-4" style="text-wrap: balance;">{{$page.portfolioItem.title}}</h1>
+            <h1 class="mb-4">{{$page.portfolioItem.title}}</h1>
             <div class="section-header-line" style="margin-left: 0;"></div>
             <div class="row">
               <div class="col-lg-6 mb-4 text-center">
