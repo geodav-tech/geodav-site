@@ -14,7 +14,9 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-robots',
-      options: {}
+      options: {
+        policy: [{ userAgent: '*', disallow: '/demos/*' }]
+      }
     },
     {
       use: '@gridsome/plugin-google-analytics',
