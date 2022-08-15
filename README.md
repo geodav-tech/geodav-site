@@ -1,14 +1,5 @@
-# Default starter for Gridsome
+# geodav site
 
-This is the project you get when you run `gridsome create new-project`.
+use the node version specified in `.nvmrc` and run `npm install` then `npm run dev` to start development.
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+when you're done, `npm run build` and push to master at github (public) and a few minutes later it'll be live at https://geodav.tech
