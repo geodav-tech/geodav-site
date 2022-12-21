@@ -15,7 +15,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-robots',
       options: {
-        policy: [{ userAgent: '*', disallow: '/demos/*' }]
+        policy: [{ userAgent: '*', disallow: '/demos/secret/*' }]
       }
     },
     {
