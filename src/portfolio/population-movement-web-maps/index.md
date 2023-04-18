@@ -6,7 +6,7 @@ summary: [
   "Features written to integrate with their existing codebase"
 ]
 coverImage: "./population-movement-intermx-web-maps.png"
-demoUrl: 'https://data.intermx.com/?d=524&i=false&bg=light&p=30328&t=20210101_20210131&a=true&pro=ra&lng=-84.3797&lat=33.9242&z=10.86'
+demoUrl: 'https://data.mworks.com/?bg=dark&lng=-83.2915&lat=33.2248&z=7.46&a=true&dem=age_00plus&dt=wk&pro=atp'
 weight: 7  # higher weight means it is more likely to be shown, and will be shown first
 servicesUsed: ['interactive-dashboards', 'interactive-maps']
 testimonial: {
