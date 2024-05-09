@@ -6,7 +6,7 @@
           additional CTA could hang out here some day.
         </div>
       </div> -->
-      <nav id="navbar-top" class="navbar navbar-expand-lg navbar-dark" :class="{'permanent-dark-top': showNavbarBackground}">
+      <nav id="navbar-top" class="navbar navbar-expand-xl navbar-dark" :class="{'permanent-dark-top': showNavbarBackground}">
         <div class="container">
           <g-link class="navbar-brand" to="/">
             <img src="../assets/media/logos/ours/logo_with_name_horizontal.svg" class="logo" alt="" loading="lazy" />
@@ -18,6 +18,9 @@
             <ul class="navbar-nav ms-auto heading-font">
               <li class="nav-item">
                 <g-link class="nav-link" to="/about/">About</g-link>
+              </li>
+              <li class="nav-item">
+                <g-link class="nav-link" to="https://chrono.cards" style="color:#209cee">ChronoCards</g-link>
               </li>
               <li class="nav-item">
                 <g-link class="nav-link" to="/services/">Services</g-link>
